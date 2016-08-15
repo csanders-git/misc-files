@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.localhost" />
+<title>wordpress</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">wordpress</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/wordpress/wp-admin/setup-config.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=language-continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Let’s go!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dbname</td>
+	<td>wordtest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=uname</td>
+	<td>wordpress</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pwd</td>
+	<td>wrongpass</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Try again</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>WordPress › Setup Configuration File</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pwd</td>
+	<td>wordpress</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Run the install</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=weblog_title</td>
+	<td>CRS Test Site</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pass1-text</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=pass1-text</td>
+	<td>dmin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=tr.pw-weak &gt; th</td>
+	<td>Confirm Password</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pw_weak</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=admin_email</td>
+	<td>none@none.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_pass</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=wp-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Write your first blog post</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>This is my first CRS blog post</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-media']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-pages']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.wp-menu-name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add an About page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=title</td>
+	<td>Learn about CRS</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=parent_id</td>
+	<td>label=Sample Page</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=menu_order</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=publish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Site Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-comments']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Reply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=replycontent</td>
+	<td>OH a comment, neat!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=replybtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Unapprove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Spam</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Trash')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-appearance']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=twentyfifteen-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Activate')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[contains(@src,'http://localhost/wordpress/wp-content/themes/twentyfourteen/screenshot.png')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Activate')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[contains(@src,'http://localhost/wordpress/wp-content/themes/twentyfifteen/screenshot.png')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Live Preview')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Customize</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Widgets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Menus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=menu-name</td>
+	<td>A new menu? sure!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=save_menu_header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newcontent</td>
+	<td>/*<br />Well this is pretty much just an injection!<br />Theme Name: Twenty Fourteen<br />Theme URI: https://wordpress.org/themes/twentyfourteen/<br />Author: the WordPress team<br />Author URI: https://wordpress.org/<br />Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.<br />Version: 1.7<br />License: GNU General Public License v2 or later<br />License URI: http://www.gnu.org/licenses/gpl-2.0.html<br />Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready<br />Text Domain: twentyfourteen<br /><br />This theme, like WordPress, is licensed under the GPL.<br />Use it to make something cool, have fun, and share what you've learned with others.<br />*/<br /><br />/**<br /> * Table of Contents:<br /> *<br /> * 1.0 - Reset<br /> * 2.0 - Repeatable Patterns<br /> * 3.0 - Basic Structure<br /> * 4.0 - Header<br /> * 5.0 - Navigation<br /> * 6.0 - Content<br /> *&nbsp;&nbsp;&nbsp;6.1 - Post Thumbnail<br /> *&nbsp;&nbsp;&nbsp;6.2 - Entry Header<br /> *&nbsp;&nbsp;&nbsp;6.3 - Entry Meta<br /> *&nbsp;&nbsp;&nbsp;6.4 - Entry Content<br /> *&nbsp;&nbsp;&nbsp;6.5 - Galleries<br /> *&nbsp;&nbsp;&nbsp;6.6 - Post Formats<br /> *&nbsp;&nbsp;&nbsp;6.7 - Post/Image/Paging Navigation<br /> *&nbsp;&nbsp;&nbsp;6.8 - Attachments<br /> *&nbsp;&nbsp;&nbsp;6.9 - Archives<br /> *&nbsp;&nbsp;&nbsp;6.10 - Contributor Page<br /> *&nbsp;&nbsp;&nbsp;6.11 - 404 Page<br /> *&nbsp;&nbsp;&nbsp;6.12 - Full-width<br /> *&nbsp;&nbsp;&nbsp;6.13 - Singular<br /> *&nbsp;&nbsp;&nbsp;6.14 - Comments<br /> * 7.0 - Sidebar<br /> *&nbsp;&nbsp;&nbsp;7.1 - Widgets<br /> *&nbsp;&nbsp;&nbsp;7.2 - Content Sidebar Widgets<br /> * 8.0 - Footer<br /> * 9.0 - Featured Content<br /> * 10.0 - Multisite<br /> * 11.0 - Media Queries<br /> * 12.0 - Print<br /> * -----------------------------------------------------------------------------<br /> */<br /><br /><br />/**<br /> * 1.0 Reset<br /> *<br /> * Resetting and rebuilding styles have been helped along thanks to the fine<br /> * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.<br /> *<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {<br />	border: 0;<br />	font-family: inherit;<br />	font-size: 100%;<br />	font-style: inherit;<br />	font-weight: inherit;<br />	margin: 0;<br />	outline: 0;<br />	padding: 0;<br />	vertical-align: baseline;<br />}<br /><br />article,<br />aside,<br />details,<br />figcaption,<br />figure,<br />footer,<br />header,<br />hgroup,<br />nav,<br />section {<br />	display: block;<br />}<br /><br />audio,<br />canvas,<br />video {<br />	display: inline-block;<br />	max-width: 100%;<br />}<br /><br />html {<br />	overflow-y: scroll;<br />	-webkit-text-size-adjust: 100%;<br />	-ms-text-size-adjust:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100%;<br />}<br /><br />body,<br />button,<br />input,<br />select,<br />textarea {<br />	color: #2b2b2b;<br />	font-family: Lato, sans-serif;<br />	font-size: 16px;<br />	font-weight: 400;<br />	line-height: 1.5;<br />}<br /><br />body {<br />	background: #f5f5f5;<br />}<br /><br />a {<br />	color: #24890d;<br />	text-decoration: none;<br />}<br /><br />a:focus {<br />	outline: thin dotted;<br />}<br /><br />a:hover,<br />a:active {<br />	outline: 0;<br />}<br /><br />a:active,<br />a:hover {<br />	color: #41a62a;<br />}<br /><br />h1,<br />h2,<br />h3,<br />h4,<br />h5,<br />h6 {<br />	clear: both;<br />	font-weight: 700;<br />	margin: 36px 0 12px;<br />}<br /><br />h1 {<br />	font-size: 26px;<br />	line-height: 1.3846153846;<br />}<br /><br />h2 {<br />	font-size: 24px;<br />	line-height: 1;<br />}<br /><br />h3 {<br />	font-size: 22px;<br />	line-height: 1.0909090909;<br />}<br /><br />h4 {<br />	font-size: 20px;<br />	line-height: 1.2;<br />}<br /><br />h5 {<br />	font-size: 18px;<br />	line-height: 1.3333333333;<br />}<br /><br />h6 {<br />	font-size: 16px;<br />	line-height: 1.5;<br />}<br /><br />address {<br />	font-style: italic;<br />	margin-bottom: 24px;<br />}<br /><br />abbr[title] {<br />	border-bottom: 1px dotted #2b2b2b;<br />	cursor: help;<br />}<br /><br />b,<br />strong {<br />	font-weight: 700;<br />}<br /><br />cite,<br />dfn,<br />em,<br />i {<br />	font-style: italic;<br />}<br /><br />mark,<br />ins {<br />	background: #fff9c0;<br />	text-decoration: none;<br />}<br /><br />p {<br />	margin-bottom: 24px;<br />}<br /><br />code,<br />kbd,<br />tt,<br />var,<br />samp,<br />pre {<br />	font-family: monospace, serif;<br />	font-size: 15px;<br />	-webkit-hyphens: none;<br />	-moz-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;none;<br />	-ms-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none;<br />	hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none;<br />	line-height: 1.6;<br />}<br /><br />pre {<br />	border: 1px solid rgba(0, 0, 0, 0.1);<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	margin-bottom: 24px;<br />	max-width: 100%;<br />	overflow: auto;<br />	padding: 12px;<br />	white-space: pre;<br />	white-space: pre-wrap;<br />	word-wrap: break-word;<br />}<br /><br />blockquote,<br />q {<br />	-webkit-hyphens: none;<br />	-moz-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;none;<br />	-ms-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none;<br />	hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none;<br />	quotes: none;<br />}<br /><br />blockquote:before,<br />blockquote:after,<br />q:before,<br />q:after {<br />	content: &quot;&quot;;<br />	content: none;<br />}<br /><br />blockquote {<br />	color: #767676;<br />	font-size: 19px;<br />	font-style: italic;<br />	font-weight: 300;<br />	line-height: 1.2631578947;<br />	margin-bottom: 24px;<br />}<br /><br />blockquote cite,<br />blockquote small {<br />	color: #2b2b2b;<br />	font-size: 16px;<br />	font-weight: 400;<br />	line-height: 1.5;<br />}<br /><br />blockquote em,<br />blockquote i,<br />blockquote cite {<br />	font-style: normal;<br />}<br /><br />blockquote strong,<br />blockquote b {<br />	font-weight: 400;<br />}<br /><br />small {<br />	font-size: smaller;<br />}<br /><br />big {<br />	font-size: 125%;<br />}<br /><br />sup,<br />sub {<br />	font-size: 75%;<br />	height: 0;<br />	line-height: 0;<br />	position: relative;<br />	vertical-align: baseline;<br />}<br /><br />sup {<br />	bottom: 1ex;<br />}<br /><br />sub {<br />	top: .5ex;<br />}<br /><br />dl {<br />	margin-bottom: 24px;<br />}<br /><br />dt {<br />	font-weight: bold;<br />}<br /><br />dd {<br />	margin-bottom: 24px;<br />}<br /><br />ul,<br />ol {<br />	list-style: none;<br />	margin: 0 0 24px 20px;<br />}<br /><br />ul {<br />	list-style: disc;<br />}<br /><br />ol {<br />	list-style: decimal;<br />}<br /><br />li &gt; ul,<br />li &gt; ol {<br />	margin: 0 0 0 20px;<br />}<br /><br />img {<br />	-ms-interpolation-mode: bicubic;<br />	border: 0;<br />	vertical-align: middle;<br />}<br /><br />figure {<br />	margin: 0;<br />}<br /><br />fieldset {<br />	border: 1px solid rgba(0, 0, 0, 0.1);<br />	margin: 0 0 24px;<br />	min-width: inherit;<br />	padding: 11px 12px 0;<br />}<br /><br />legend {<br />	white-space: normal;<br />}<br /><br />button,<br />input,<br />select,<br />textarea {<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	font-size: 100%;<br />	margin: 0;<br />	max-width: 100%;<br />	vertical-align: baseline;<br />}<br /><br />button,<br />input {<br />	line-height: normal;<br />}<br /><br />input,<br />textarea {<br />	background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */<br />}<br /><br />button,<br />html input[type=&quot;button&quot;],<br />input[type=&quot;reset&quot;],<br />input[type=&quot;submit&quot;] {<br />	-webkit-appearance: button;<br />	cursor: pointer;<br />}<br /><br />button[disabled],<br />input[disabled] {<br />	cursor: default;<br />}<br /><br />input[type=&quot;checkbox&quot;],<br />input[type=&quot;radio&quot;] {<br />	padding: 0;<br />}<br /><br />input[type=&quot;search&quot;] {<br />	-webkit-appearance: textfield;<br />}<br /><br />input[type=&quot;search&quot;]::-webkit-search-decoration {<br />	-webkit-appearance: none;<br />}<br /><br />button::-moz-focus-inner,<br />input::-moz-focus-inner {<br />	border: 0;<br />	padding: 0;<br />}<br /><br />textarea {<br />	overflow: auto;<br />	vertical-align: top;<br />}<br /><br />table,<br />th,<br />td {<br />	border: 1px solid rgba(0, 0, 0, 0.1);<br />}<br /><br />table {<br />	border-collapse: separate;<br />	border-spacing: 0;<br />	border-width: 1px 0 0 1px;<br />	margin-bottom: 24px;<br />	width: 100%;<br />}<br /><br />caption,<br />th,<br />td {<br />	font-weight: normal;<br />	text-align: left;<br />}<br /><br />th {<br />	border-width: 0 1px 1px 0;<br />	font-weight: bold;<br />}<br /><br />td {<br />	border-width: 0 1px 1px 0;<br />}<br /><br />del {<br />	color: #767676;<br />}<br /><br />hr {<br />	background-color: rgba(0, 0, 0, 0.1);<br />	border: 0;<br />	height: 1px;<br />	margin-bottom: 23px;<br />}<br /><br />/* Support a widely-adopted but non-standard selector for text selection styles<br /> * to achieve a better experience. See https://core.trac.wordpress.org/ticket/25898.<br /> */<br />::selection {<br />	background: #24890d;<br />	color: #fff;<br />	text-shadow: none;<br />}<br /><br />::-moz-selection {<br />	background: #24890d;<br />	color: #fff;<br />	text-shadow: none;<br />}<br /><br /><br />/**<br /> * 2.0 Repeatable Patterns<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />/* Input fields */<br /><br />input,<br />textarea {<br />	border: 1px solid rgba(0, 0, 0, 0.1);<br />	border-radius: 2px;<br />	color: #2b2b2b;<br />	padding: 8px 10px 7px;<br />}<br /><br />textarea {<br />	width: 100%;<br />}<br /><br />input:focus,<br />textarea:focus {<br />	border: 1px solid rgba(0, 0, 0, 0.3);<br />	outline: 0;<br />}<br /><br />/* Buttons */<br /><br />button,<br />.button,<br />input[type=&quot;button&quot;],<br />input[type=&quot;reset&quot;],<br />input[type=&quot;submit&quot;] {<br />	background-color: #24890d;<br />	border: 0;<br />	border-radius: 2px;<br />	color: #fff;<br />	font-size: 12px;<br />	font-weight: 700;<br />	padding: 10px 30px 11px;<br />	text-transform: uppercase;<br />	vertical-align: bottom;<br />}<br /><br />button:hover,<br />button:focus,<br />.button:hover,<br />.button:focus,<br />input[type=&quot;button&quot;]:hover,<br />input[type=&quot;button&quot;]:focus,<br />input[type=&quot;reset&quot;]:hover,<br />input[type=&quot;reset&quot;]:focus,<br />input[type=&quot;submit&quot;]:hover,<br />input[type=&quot;submit&quot;]:focus {<br />	background-color: #41a62a;<br />	color: #fff;<br />}<br /><br />button:active,<br />.button:active,<br />input[type=&quot;button&quot;]:active,<br />input[type=&quot;reset&quot;]:active,<br />input[type=&quot;submit&quot;]:active {<br />	background-color: #55d737;<br />}<br /><br />.search-field {<br />	width: 100%;<br />}<br /><br />.search-submit {<br />	display: none;<br />}<br /><br />/* Placeholder text color -- selectors need to be separate to work. */<br /><br />::-webkit-input-placeholder {<br />	color: #939393;<br />}<br /><br />:-moz-placeholder {<br />	color: #939393;<br />}<br /><br />::-moz-placeholder {<br />	color: #939393;<br />	opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */<br />}<br /><br />:-ms-input-placeholder {<br />	color: #939393;<br />}<br /><br />/* Responsive images. Fluid images for posts, comments, and widgets */<br /><br />.comment-content img,<br />.entry-content img,<br />.entry-summary img,<br />#site-header img,<br />.widget img,<br />.wp-caption {<br />	max-width: 100%;<br />}<br /><br />/**<br /> * Make sure images with WordPress-added height and width attributes are<br /> * scaled correctly.<br /> */<br /><br />.comment-content img[height],<br />.entry-content img,<br />.entry-summary img,<br />img[class*=&quot;align&quot;],<br />img[class*=&quot;wp-image-&quot;],<br />img[class*=&quot;attachment-&quot;],<br />#site-header img {<br />	height: auto;<br />}<br /><br />img.size-full,<br />img.size-large,<br />.wp-post-image,<br />.post-thumbnail img {<br />	height: auto;<br />	max-width: 100%;<br />}<br /><br />/* Make sure embeds and iframes fit their containers */<br /><br />embed,<br />iframe,<br />object,<br />video {<br />	margin-bottom: 24px;<br />	max-width: 100%;<br />}<br /><br />p &gt; embed,<br />p &gt; iframe,<br />p &gt; object,<br />span &gt; embed,<br />span &gt; iframe,<br />span &gt; object {<br />	margin-bottom: 0;<br />}<br /><br />/* Alignment */<br /><br />.alignleft {<br />	float: left;<br />}<br /><br />.alignright {<br />	float: right;<br />}<br /><br />.aligncenter {<br />	display: block;<br />	margin-left: auto;<br />	margin-right: auto;<br />}<br /><br />blockquote.alignleft,<br />figure.wp-caption.alignleft,<br />img.alignleft {<br />	margin: 7px 24px 7px 0;<br />}<br /><br />.wp-caption.alignleft {<br />	margin: 7px 14px 7px 0;<br />}<br /><br />blockquote.alignright,<br />figure.wp-caption.alignright,<br />img.alignright {<br />	margin: 7px 0 7px 24px;<br />}<br /><br />.wp-caption.alignright {<br />	margin: 7px 0 7px 14px;<br />}<br /><br />blockquote.aligncenter,<br />img.aligncenter,<br />.wp-caption.aligncenter {<br />	margin-top: 7px;<br />	margin-bottom: 7px;<br />}<br /><br />.site-content blockquote.alignleft,<br />.site-content blockquote.alignright {<br />	border-top: 1px solid rgba(0, 0, 0, 0.1);<br />	border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />	padding-top: 17px;<br />	width: 50%;<br />}<br /><br />.site-content blockquote.alignleft p,<br />.site-content blockquote.alignright p {<br />	margin-bottom: 17px;<br />}<br /><br />.wp-caption {<br />	margin-bottom: 24px;<br />}<br /><br />.wp-caption img[class*=&quot;wp-image-&quot;] {<br />	display: block;<br />	margin: 0;<br />}<br /><br />.wp-caption {<br />	color: #767676;<br />}<br /><br />.wp-caption-text {<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	font-size: 12px;<br />	font-style: italic;<br />	line-height: 1.5;<br />	margin: 9px 0;<br />}<br /><br />div.wp-caption .wp-caption-text {<br />	padding-right: 10px;<br />}<br /><br />div.wp-caption.alignright img[class*=&quot;wp-image-&quot;],<br />div.wp-caption.alignright .wp-caption-text {<br />	padding-left: 10px;<br />	padding-right: 0;<br />}<br /><br />.wp-smiley {<br />	border: 0;<br />	margin-bottom: 0;<br />	margin-top: 0;<br />	padding: 0;<br />}<br /><br />/* Assistive text */<br /><br />.screen-reader-text {<br />	clip: rect(1px, 1px, 1px, 1px);<br />	overflow: hidden;<br />	position: absolute !important;<br />	height: 1px;<br />	width: 1px;<br />}<br /><br />.screen-reader-text:focus {<br />	background-color: #f1f1f1;<br />	border-radius: 3px;<br />	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);<br />	clip: auto;<br />	color: #21759b;<br />	display: block;<br />	font-size: 14px;<br />	font-weight: bold;<br />	height: auto;<br />	line-height: normal;<br />	padding: 15px 23px 14px;<br />	position: absolute;<br />	left: 5px;<br />	top: 5px;<br />	text-decoration: none;<br />	text-transform: none;<br />	width: auto;<br />	z-index: 100000; /* Above WP toolbar */<br />}<br /><br />.hide {<br />	display: none;<br />}<br /><br />/* Clearing floats */<br /><br />.footer-sidebar:before,<br />.footer-sidebar:after,<br />.hentry:before,<br />.hentry:after,<br />.gallery:before,<br />.gallery:after,<br />.slider-direction-nav:before,<br />.slider-direction-nav:after,<br />.contributor-info:before,<br />.contributor-info:after,<br />.search-box:before,<br />.search-box:after,<br />[class*=&quot;content&quot;]:before,<br />[class*=&quot;content&quot;]:after,<br />[class*=&quot;site&quot;]:before,<br />[class*=&quot;site&quot;]:after {<br />	content: &quot;&quot;;<br />	display: table;<br />}<br /><br />.footer-sidebar:after,<br />.hentry:after,<br />.gallery:after,<br />.slider-direction-nav:after,<br />.contributor-info:after,<br />.search-box:after,<br />[class*=&quot;content&quot;]:after,<br />[class*=&quot;site&quot;]:after {<br />	clear: both;<br />}<br /><br />/* Genericons */<br /><br />.bypostauthor &gt; article .fn:before,<br />.comment-edit-link:before,<br />.comment-reply-link:before,<br />.comment-reply-login:before,<br />.comment-reply-title small a:before,<br />.contributor-posts-link:before,<br />.menu-toggle:before,<br />.search-toggle:before,<br />.slider-direction-nav a:before,<br />.widget_twentyfourteen_ephemera .widget-title:before {<br />	-webkit-font-smoothing: antialiased;<br />	display: inline-block;<br />	font: normal 16px/1 Genericons;<br />	text-decoration: inherit;<br />	vertical-align: text-bottom;<br />}<br /><br />/* Separators */<br /><br />.site-content span + .entry-date:before,<br />.full-size-link:before,<br />.parent-post-link:before,<br />span + .byline:before,<br />span + .comments-link:before,<br />span + .edit-link:before,<br />.widget_twentyfourteen_ephemera .entry-title:after {<br />	content: &quot;\0020\007c\0020&quot;;<br />}<br /><br /><br />/**<br /> * 3.0 Basic Structure<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.site {<br />	background-color: #fff;<br />	max-width: 1260px;<br />	position: relative;<br />}<br /><br />.main-content {<br />	width: 100%;<br />}<br /><br /><br />/**<br /> * 4.0 Header<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />/* Ensure that there is no gap between the header and<br />	 the admin bar for WordPress versions before 3.8. */<br />#wpadminbar {<br />	min-height: 32px;<br />}<br /><br />#site-header {<br />	position: relative;<br />	z-index: 3;<br />}<br /><br />.site-header {<br />	background-color: #000;<br />	max-width: 1260px;<br />	position: relative;<br />	width: 100%;<br />	z-index: 4;<br />}<br /><br />.header-main {<br />	min-height: 48px;<br />	padding: 0 10px;<br />}<br /><br />.site-title {<br />	float: left;<br />	font-size: 18px;<br />	font-weight: 700;<br />	line-height: 48px;<br />	margin: 0;<br /><br />	/* Nav-toggle width + search-toggle width - gutter = 86px */<br />	max-width: -webkit-calc(100% - 86px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(100% - 86px);<br />}<br /><br />.site-title a,<br />.site-title a:hover {<br />	color: #fff;<br />	display: block;<br />	overflow: hidden;<br />	text-overflow: ellipsis;<br />	white-space: nowrap;<br />}<br /><br />/* Search in the header */<br /><br />.search-toggle {<br />	background-color: #24890d;<br />	cursor: pointer;<br />	float: right;<br />	height: 48px;<br />	margin-right: 38px;<br />	text-align: center;<br />	width: 48px;<br />}<br /><br />.search-toggle:hover,<br />.search-toggle.active {<br />	background-color: #41a62a;<br />}<br /><br />.search-toggle:before {<br />	color: #fff;<br />	content: &quot;\f400&quot;;<br />	font-size: 20px;<br />	margin-top: 14px;<br />}<br /><br />.search-toggle .screen-reader-text {<br />	left: 5px; /* Avoid a horizontal scrollbar when the site has a long menu */<br />}<br /><br />.search-box-wrapper {<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	position: absolute;<br />	top: 48px;<br />	right: 0;<br />	width: 100%;<br />	z-index: 2;<br />}<br /><br />.search-box {<br />	background-color: #41a62a;<br />	padding: 12px;<br />}<br /><br />.search-box .search-field {<br />	background-color: #fff;<br />	border: 0;<br />	float: right;<br />	font-size: 16px;<br />	padding: 2px 2px 3px 6px;<br />	width: 100%;<br />}<br /><br /><br />/**<br /> * 5.0 Navigation<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.site-navigation ul {<br />	list-style: none;<br />	margin: 0;<br />}<br /><br />.site-navigation li {<br />	border-top: 1px solid rgba(255, 255, 255, 0.2);<br />}<br /><br />.site-navigation ul ul {<br />	margin-left: 20px;<br />}<br /><br />.site-navigation a {<br />	color: #fff;<br />	display: block;<br />	text-transform: uppercase;<br />}<br /><br />.site-navigation a:hover {<br />	color: #41a62a;<br />}<br /><br />.site-navigation .current_page_item &gt; a,<br />.site-navigation .current_page_ancestor &gt; a,<br />.site-navigation .current-menu-item &gt; a,<br />.site-navigation .current-menu-ancestor &gt; a {<br />	color: #55d737;<br />	font-weight: 900;<br />}<br /><br />/* Primary Navigation */<br /><br />.primary-navigation {<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	font-size: 14px;<br />	padding-top: 24px;<br />}<br /><br />.primary-navigation.toggled-on {<br />	padding: 72px 0 36px;<br />}<br /><br />.primary-navigation .nav-menu {<br />	border-bottom: 1px solid rgba(255, 255, 255, 0.2);<br />	display: none;<br />}<br /><br />.primary-navigation.toggled-on .nav-menu {<br />	display: block;<br />}<br /><br />.primary-navigation a {<br />	padding: 7px 0;<br />}<br /><br />/* Secondary Navigation */<br /><br />.secondary-navigation {<br />	border-bottom: 1px solid rgba(255, 255, 255, 0.2);<br />	font-size: 12px;<br />	margin: 48px 0;<br />}<br /><br />.secondary-navigation a {<br />	padding: 9px 0;<br />}<br /><br />.menu-toggle {<br />	background-color: #000;<br />	border-radius: 0;<br />	cursor: pointer;<br />	height: 48px;<br />	margin: 0;<br />	overflow: hidden;<br />	padding: 0;<br />	position: absolute;<br />	top: 0;<br />	right: 0;<br />	text-align: center;<br />	width: 48px;<br />}<br /><br />.menu-toggle:before {<br />	color: #fff;<br />	content: &quot;\f419&quot;;<br />	padding: 16px;<br />}<br /><br />.menu-toggle:active,<br />.menu-toggle:focus,<br />.menu-toggle:hover {<br />	background-color: #444;<br />}<br /><br />.menu-toggle:focus {<br />	outline: 1px dotted;<br />}<br /><br /><br />/**<br /> * 6.0 Content<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.content-area {<br />	padding-top: 48px;<br />}<br /><br />.hentry {<br />	margin: 0 auto 48px;<br />	max-width: 672px;<br />}<br /><br />.site-content .entry-header,<br />.site-content .entry-content,<br />.site-content .entry-summary,<br />.site-content .entry-meta,<br />.page-content {<br />	margin: 0 auto;<br />	max-width: 474px;<br />}<br /><br />.page-content {<br />	margin-bottom: 48px;<br />}<br /><br /><br />/**<br /> * 6.1 Post Thumbnail<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.post-thumbnail {<br />	background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;<br />	display: block;<br />	position: relative;<br />	width: 100%;<br />	z-index: 0;<br />}<br /><br />a.post-thumbnail:hover {<br />	background-color: #999;<br />}<br /><br />.full-width .post-thumbnail img {<br />	display: block;<br />	margin: 0 auto;<br />}<br /><br /><br />/**<br /> * 6.2 Entry Header<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.entry-header {<br />	position: relative;<br />	z-index: 1;<br />}<br /><br />.entry-title {<br />	font-size: 33px;<br />	font-weight: 300;<br />	line-height: 1.0909090909;<br />	margin-bottom: 12px;<br />	margin: 0 0 12px 0;<br />	text-transform: uppercase;<br />}<br /><br />.entry-title a {<br />	color: #2b2b2b;<br />}<br /><br />.entry-title a:hover {<br />	color: #41a62a;<br />}<br /><br />.site-content .entry-header {<br />	background-color: #fff;<br />	padding: 0 10px 12px;<br />}<br /><br />.site-content .has-post-thumbnail .entry-header {<br />	padding-top: 24px;<br />}<br /><br /><br />/**<br /> * 6.3 Entry Meta<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.entry-meta {<br />	clear: both;<br />	color: #767676;<br />	font-size: 12px;<br />	font-weight: 400;<br />	line-height: 1.3333333333;<br />	text-transform: uppercase;<br />}<br /><br />.entry-meta a {<br />	color: #767676;<br />}<br /><br />.entry-meta a:hover {<br />	color: #41a62a;<br />}<br /><br />.sticky .entry-date {<br />	display: none;<br />}<br /><br />.cat-links {<br />	font-weight: 900;<br />	text-transform: uppercase;<br />}<br /><br />.cat-links a {<br />	color: #2b2b2b;<br />}<br /><br />.cat-links a:hover {<br />	color: #41a62a;<br />}<br /><br />.byline {<br />	display: none;<br />}<br /><br />.single .byline,<br />.group-blog .byline {<br />	display: inline;<br />}<br /><br />.site-content .entry-meta {<br />	background-color: #fff;<br />	margin-bottom: 8px;<br />}<br /><br />.site-content footer.entry-meta {<br />	margin: 24px auto 0;<br />	padding: 0 10px;<br />}<br /><br />/* Tag links style */<br /><br />.entry-meta .tag-links a {<br />	background-color: #767676;<br />	border-radius: 0 2px 2px 0;<br />	color: #fff;<br />	display: inline-block;<br />	font-size: 11px;<br />	font-weight: 700;<br />	line-height: 1.2727272727;<br />	margin: 2px 4px 2px 10px;<br />	padding: 3px 7px;<br />	position: relative;<br />	text-transform: uppercase;<br />}<br /><br />.entry-meta .tag-links a:hover {<br />	background-color: #41a62a;<br />	color: #fff;<br />}<br /><br />.entry-meta .tag-links a:before {<br />	border-top: 10px solid transparent;<br />	border-right: 8px solid #767676;<br />	border-bottom: 10px solid transparent;<br />	content: &quot;&quot;;<br />	height: 0;<br />	position: absolute;<br />	top: 0;<br />	left: -8px;<br />	width: 0;<br />}<br /><br />.entry-meta .tag-links a:hover:before {<br />	border-right-color: #41a62a;<br />}<br /><br />.entry-meta .tag-links a:after {<br />	background-color: #fff;<br />	border-radius: 50%;<br />	content: &quot;&quot;;<br />	height: 4px;<br />	position: absolute;<br />	top: 8px;<br />	left: -2px;<br />	width: 4px;<br />}<br /><br /><br />/**<br /> * 6.4 Entry Content<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.entry-content,<br />.entry-summary,<br />.page-content {<br />	-webkit-hyphens: auto;<br />	-moz-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	-ms-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	word-wrap: break-word;<br />}<br /><br />.site-content .entry-content,<br />.site-content .entry-summary,<br />.page-content {<br />	background-color: #fff;<br />	padding: 12px 10px 0;<br />}<br /><br />.page .entry-content {<br />	padding-top: 0;<br />}<br /><br />.entry-content h1:first-child,<br />.entry-content h2:first-child,<br />.entry-content h3:first-child,<br />.entry-content h4:first-child,<br />.entry-content h5:first-child,<br />.entry-content h6:first-child,<br />.entry-summary h1:first-child,<br />.entry-summary h2:first-child,<br />.entry-summary h3:first-child,<br />.entry-summary h4:first-child,<br />.entry-summary h5:first-child,<br />.entry-summary h6:first-child,<br />.page-content h1:first-child,<br />.page-content h2:first-child,<br />.page-content h3:first-child,<br />.page-content h4:first-child,<br />.page-content h5:first-child,<br />.page-content h6:first-child {<br />	margin-top: 0;<br />}<br /><br />.entry-content a,<br />.entry-summary a,<br />.page-content a,<br />.comment-content a {<br />	text-decoration: underline;<br />}<br /><br />.entry-content a:hover,<br />.entry-summary a:hover,<br />.page-content a:hover,<br />.comment-content a:hover,<br />.entry-content a.button,<br />.entry-summary a.button,<br />.page-content a.button,<br />.comment-content a.button {<br />	text-decoration: none;<br />}<br /><br />.entry-content table,<br />.comment-content table {<br />	font-size: 14px;<br />	line-height: 1.2857142857;<br />	margin-bottom: 24px;<br />}<br /><br />.entry-content th,<br />.comment-content th {<br />	font-weight: 700;<br />	padding: 8px;<br />	text-transform: uppercase;<br />}<br /><br />.entry-content td,<br />.comment-content td {<br />	padding: 8px;<br />}<br /><br />.entry-content .edit-link {<br />	clear: both;<br />	display: block;<br />	font-size: 12px;<br />	font-weight: 400;<br />	line-height: 1.3333333333;<br />	text-transform: uppercase;<br />}<br /><br />.entry-content .edit-link a {<br />	color: #767676;<br />	text-decoration: none;<br />}<br /><br />.entry-content .edit-link a:hover {<br />	color: #41a62a;<br />}<br /><br />.entry-content .more-link {<br />	white-space: nowrap;<br />}<br /><br />/* Mediaelements */<br /><br />.hentry .mejs-container {<br />	margin: 12px 0 18px;<br />}<br /><br />.hentry .mejs-mediaelement,<br />.hentry .mejs-container .mejs-controls {<br />	background: #000;<br />}<br /><br />.hentry .mejs-controls .mejs-time-rail .mejs-time-loaded,<br />.hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {<br />	background: #fff;<br />}<br /><br />.hentry .mejs-controls .mejs-time-rail .mejs-time-current {<br />	background: #24890d;<br />}<br /><br />.hentry .mejs-controls .mejs-time-rail .mejs-time-total,<br />.hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {<br />	background: rgba(255, 255, 255, .33);<br />}<br /><br />.hentry .mejs-container .mejs-controls .mejs-time {<br />	padding-top: 9px;<br />}<br /><br />.hentry .mejs-controls .mejs-time-rail span,<br />.hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,<br />.hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {<br />	border-radius: 0;<br />}<br /><br />.hentry .mejs-overlay-loading {<br />	background: transparent;<br />}<br /><br />.hentry .mejs-overlay-button {<br />	background-color: #fff;<br />	background-image: none;<br />	border-radius: 2px;<br />	box-shadow: 1px 1px 1px rgba(0,0,0,.8);<br />	color: #000;<br />	height: 36px;<br />	margin-left: -24px;<br />	width: 48px;<br />}<br /><br />.hentry .mejs-overlay-button:before {<br />	-webkit-font-smoothing: antialiased;<br />	content: '\f452';<br />	display: inline-block;<br />	font: normal 32px/1.125 Genericons;<br />	position: absolute;<br />	top: 1px;<br />	left: 10px;<br />}<br /><br />.hentry .mejs-controls .mejs-button button:focus {<br />	outline: none;<br />}<br /><br />.hentry .mejs-controls .mejs-button button {<br />	-webkit-font-smoothing: antialiased;<br />	background: none;<br />	color: #fff;<br />	display: inline-block;<br />	font: normal 16px/1 Genericons;<br />}<br /><br />.hentry .mejs-playpause-button.mejs-play button:before {<br />	content: '\f452';<br />}<br /><br />.hentry .mejs-playpause-button.mejs-pause button:before {<br />	content: '\f448';<br />}<br /><br />.hentry .mejs-volume-button.mejs-mute button:before {<br />	content: '\f109';<br />	font-size: 20px;<br />	position: absolute;<br />	top: -2px;<br />	left: 0;<br />}<br /><br />.hentry .mejs-volume-button.mejs-unmute button:before {<br />	content: '\f109';<br />	left: 0;<br />	position: absolute;<br />	top: 0;<br />}<br /><br />.hentry .mejs-fullscreen-button button:before {<br />	content: '\f474';<br />}<br /><br />.hentry .mejs-fullscreen-button.mejs-unfullscreen button:before {<br />	content: '\f406';<br />}<br /><br />.hentry .mejs-overlay:hover .mejs-overlay-button {<br />	background-color: #24890d;<br />	color: #fff;<br />}<br /><br />.hentry .mejs-controls .mejs-button button:hover {<br />	color: #41a62a;<br />}<br /><br />.content-sidebar .wp-playlist-item .wp-playlist-caption {<br />	color: #000;<br />}<br /><br />/* Page links */<br /><br />.page-links {<br />	clear: both;<br />	font-size: 12px;<br />	font-weight: 900;<br />	line-height: 2;<br />	margin: 24px 0;<br />	text-transform: uppercase;<br />}<br /><br />.page-links a,<br />.page-links &gt; span {<br />	background: #fff;<br />	border: 1px solid #fff;<br />	display: inline-block;<br />	height: 22px;<br />	margin: 0 1px 2px 0;<br />	text-align: center;<br />	width: 22px;<br />}<br /><br />.page-links a {<br />	background: #000;<br />	border: 1px solid #000;<br />	color: #fff;<br />	text-decoration: none;<br />}<br /><br />.page-links a:hover {<br />	background: #41a62a;<br />	border: 1px solid #41a62a;<br />	color: #fff;<br />}<br /><br />.page-links &gt; .page-links-title {<br />	height: auto;<br />	margin: 0;<br />	padding-right: 7px;<br />	width: auto;<br />}<br /><br /><br />/**<br /> * 6.5 Gallery<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.gallery {<br />	margin-bottom: 20px;<br />}<br /><br />.gallery-item {<br />	float: left;<br />	margin: 0 4px 4px 0;<br />	overflow: hidden;<br />	position: relative;<br />}<br /><br />.gallery-columns-1 .gallery-item {<br />	max-width: 100%;<br />}<br /><br />.gallery-columns-2 .gallery-item {<br />	max-width: 48%;<br />	max-width: -webkit-calc(50% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(50% - 4px);<br />}<br /><br />.gallery-columns-3 .gallery-item {<br />	max-width: 32%;<br />	max-width: -webkit-calc(33.3% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(33.3% - 4px);<br />}<br /><br />.gallery-columns-4 .gallery-item {<br />	max-width: 23%;<br />	max-width: -webkit-calc(25% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(25% - 4px);<br />}<br /><br />.gallery-columns-5 .gallery-item {<br />	max-width: 19%;<br />	max-width: -webkit-calc(20% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(20% - 4px);<br />}<br /><br />.gallery-columns-6 .gallery-item {<br />	max-width: 15%;<br />	max-width: -webkit-calc(16.7% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(16.7% - 4px);<br />}<br /><br />.gallery-columns-7 .gallery-item {<br />	max-width: 13%;<br />	max-width: -webkit-calc(14.28% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(14.28% - 4px);<br />}<br /><br />.gallery-columns-8 .gallery-item {<br />	max-width: 11%;<br />	max-width: -webkit-calc(12.5% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(12.5% - 4px);<br />}<br /><br />.gallery-columns-9 .gallery-item {<br />	max-width: 9%;<br />	max-width: -webkit-calc(11.1% - 4px);<br />	max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(11.1% - 4px);<br />}<br /><br />.gallery-columns-1 .gallery-item:nth-of-type(1n),<br />.gallery-columns-2 .gallery-item:nth-of-type(2n),<br />.gallery-columns-3 .gallery-item:nth-of-type(3n),<br />.gallery-columns-4 .gallery-item:nth-of-type(4n),<br />.gallery-columns-5 .gallery-item:nth-of-type(5n),<br />.gallery-columns-6 .gallery-item:nth-of-type(6n),<br />.gallery-columns-7 .gallery-item:nth-of-type(7n),<br />.gallery-columns-8 .gallery-item:nth-of-type(8n),<br />.gallery-columns-9 .gallery-item:nth-of-type(9n) {<br />	margin-right: 0;<br />}<br /><br />.gallery-columns-1.gallery-size-medium figure.gallery-item:nth-of-type(1n+1),<br />.gallery-columns-1.gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1),<br />.gallery-columns-2.gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1),<br />.gallery-columns-3.gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {<br />	clear: left;<br />}<br /><br />.gallery-caption {<br />	background-color: rgba(0, 0, 0, 0.7);<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	color: #fff;<br />	font-size: 12px;<br />	line-height: 1.5;<br />	margin: 0;<br />	max-height: 50%;<br />	opacity: 0;<br />	padding: 6px 8px;<br />	position: absolute;<br />	bottom: 0;<br />	left: 0;<br />	text-align: left;<br />	width: 100%;<br />}<br /><br />.gallery-caption:before {<br />	content: &quot;&quot;;<br />	height: 100%;<br />	min-height: 49px;<br />	position: absolute;<br />	top: 0;<br />	left: 0;<br />	width: 100%;<br />}<br /><br />.gallery-item:hover .gallery-caption {<br />	opacity: 1;<br />}<br /><br />.gallery-columns-7 .gallery-caption,<br />.gallery-columns-8 .gallery-caption,<br />.gallery-columns-9 .gallery-caption {<br />	display: none;<br />}<br /><br /><br />/**<br /> * 6.6 Post Formats<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.format-aside .entry-content,<br />.format-aside .entry-summary,<br />.format-quote .entry-content,<br />.format-quote .entry-summary,<br />.format-link .entry-content,<br />.format-link .entry-summary {<br />	padding-top: 0;<br />}<br /><br />.site-content .format-link .entry-title,<br />.site-content .format-aside .entry-title,<br />.site-content .format-quote .entry-title {<br />	display: none;<br />}<br /><br /><br />/**<br /> * 6.7 Post/Image/Paging Navigation<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.nav-links {<br />	-webkit-hyphens: auto;<br />	-moz-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	-ms-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	border-top: 1px solid rgba(0, 0, 0, 0.1);<br />	hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	word-wrap: break-word;<br />}<br /><br />.post-navigation,<br />.image-navigation {<br />	margin: 24px auto 48px;<br />	max-width: 474px;<br />	padding: 0 10px;<br />}<br /><br />.post-navigation a,<br />.image-navigation .previous-image,<br />.image-navigation .next-image {<br />	border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />	padding: 11px 0 12px;<br />	width: 100%;<br />}<br /><br />.post-navigation .meta-nav {<br />	color: #767676;<br />	display: block;<br />	font-size: 12px;<br />	font-weight: 900;<br />	line-height: 2;<br />	text-transform: uppercase;<br />}<br /><br />.post-navigation a,<br />.image-navigation a {<br />	color: #2b2b2b;<br />	display: block;<br />	font-size: 14px;<br />	font-weight: 700;<br />	line-height: 1.7142857142;<br />	text-transform: none;<br />}<br /><br />.post-navigation a:hover,<br />.image-navigation a:hover {<br />	color: #41a62a;<br />}<br /><br />/* Paging Navigation */<br /><br />.paging-navigation {<br />	border-top: 5px solid #000;<br />	margin: 48px 0;<br />}<br /><br />.paging-navigation .loop-pagination {<br />	margin-top: -5px;<br />	text-align: center;<br />}<br /><br />.paging-navigation .page-numbers {<br />	border-top: 5px solid transparent;<br />	display: inline-block;<br />	font-size: 14px;<br />	font-weight: 900;<br />	margin-right: 1px;<br />	padding: 7px 16px;<br />	text-transform: uppercase;<br />}<br /><br />.paging-navigation a {<br />	color: #2b2b2b;<br />}<br /><br />.paging-navigation .page-numbers.current {<br />	border-top: 5px solid #24890d;<br />}<br /><br />.paging-navigation a:hover {<br />	border-top: 5px solid #41a62a;<br />	color: #2b2b2b;<br />}<br /><br /><br />/**<br /> * 6.8 Attachments<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.attachment .content-sidebar,<br />.attachment .post-thumbnail {<br />	display: none;<br />}<br /><br />.attachment .entry-content {<br />	padding-top: 0;<br />}<br /><br />.attachment footer.entry-meta {<br />	text-transform: none;<br />}<br /><br />.entry-attachment .attachment {<br />	margin-bottom: 24px;<br />}<br /><br /><br />/**<br /> * 6.9 Archives<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.archive-header,<br />.page-header {<br />	margin: 24px auto;<br />	max-width: 474px;<br />}<br /><br />.archive-title,<br />.page-title {<br />	font-size: 16px;<br />	font-weight: 900;<br />	line-height: 1.5;<br />	margin: 0;<br />}<br /><br />.taxonomy-description,<br />.author-description {<br />	color: #767676;<br />	font-size: 14px;<br />	line-height: 1.2857142857;<br />	padding-top: 18px;<br />}<br /><br />.taxonomy-description p,<br />.author-description p {<br />	margin-bottom: 18px;<br />}<br /><br />.taxonomy-description p:last-child,<br />.author-description p:last-child {<br />	margin-bottom: 0;<br />}<br /><br />.taxonomy-description a,<br />.author-description a {<br />	text-decoration: underline;<br />}<br /><br />.taxonomy-description a:hover,<br />.author-description a:hover {<br />	text-decoration: none;<br />}<br /><br /><br />/**<br /> * 6.10 Contributor Page<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.contributor {<br />	border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing: border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	padding: 48px 10px;<br />}<br /><br />.contributor:first-of-type {<br />	padding-top: 24px;<br />}<br /><br />.contributor-info {<br />	margin: 0 auto;<br />	max-width: 474px;<br />}<br /><br />.contributor-avatar {<br />	border: 1px solid rgba(0, 0, 0, 0.1);<br />	float: left;<br />	margin: 0 30px 20px 0;<br />	padding: 2px;<br />}<br /><br />.contributor-name {<br />	font-size: 16px;<br />	font-weight: 900;<br />	line-height: 1.5;<br />	margin: 0;<br />}<br /><br />.contributor-bio a {<br />	text-decoration: underline;<br />}<br /><br />.contributor-bio a:hover {<br />	text-decoration: none;<br />}<br /><br />.contributor-posts-link {<br />	display: inline-block;<br />	line-height: normal;<br />	padding: 10px 30px;<br />}<br /><br />.contributor-posts-link:before {<br />	content: &quot;\f443&quot;;<br />}<br /><br /><br />/**<br /> * 6.11 404 Page<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.error404 .page-content {<br />	padding-top: 0;<br />}<br /><br />.error404 .page-content .search-form {<br />	margin-bottom: 24px;<br />}<br /><br /><br />/**<br /> * 6.12 Full-width<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.full-width .hentry {<br />	max-width: 100%;<br />}<br /><br /><br />/**<br /> * 6.13 Singular<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.singular .site-content .hentry.has-post-thumbnail {<br />	margin-top: -48px;<br />}<br /><br /><br />/**<br /> * 6.14 Comments<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.comments-area {<br />	margin: 48px auto;<br />	max-width: 474px;<br />	padding: 0 10px;<br />}<br /><br />.comment-reply-title,<br />.comments-title {<br />	font: 900 16px/1.5 Lato, sans-serif;<br />	margin: 0;<br />	text-transform: uppercase;<br />}<br /><br />.comment-list {<br />	list-style: none;<br />	margin: 0 0 48px 0;<br />}<br /><br />.comment-author {<br />	font-size: 14px;<br />	line-height: 1.7142857142;<br />}<br /><br />.comment-list .reply,<br />.comment-metadata {<br />	font-size: 12px;<br />	line-height: 2;<br />	text-transform: uppercase;<br />}<br /><br />.comment-list .reply {<br />	margin-top: 24px;<br />}<br /><br />.comment-author .fn {<br />	font-weight: 900;<br />}<br /><br />.comment-author a {<br />	color: #2b2b2b;<br />}<br /><br />.comment-list .trackback a,<br />.comment-list .pingback a,<br />.comment-metadata a {<br />	color: #767676;<br />}<br /><br />.comment-author a:hover,<br />.comment-list .pingback a:hover,<br />.comment-list .trackback a:hover,<br />.comment-metadata a:hover {<br />	color: #41a62a;<br />}<br /><br />.comment-list article,<br />.comment-list .pingback,<br />.comment-list .trackback {<br />	border-top: 1px solid rgba(0, 0, 0, 0.1);<br />	margin-bottom: 24px;<br />	padding-top: 24px;<br />}<br /><br />.comment-list &gt; li:first-child &gt; article,<br />.comment-list &gt; .pingback:first-child,<br />.comment-list &gt; .trackback:first-child {<br />	border-top: 0;<br />}<br /><br />.comment-author {<br />	position: relative;<br />}<br /><br />.comment-author .avatar {<br />	border: 1px solid rgba(0, 0, 0, 0.1);<br />	height: 18px;<br />	padding: 2px;<br />	position: absolute;<br />	top: 0;<br />	left: 0;<br />	width: 18px;<br />}<br /><br />.bypostauthor &gt; article .fn:before {<br />	content: &quot;\f408&quot;;<br />	margin: 0 2px 0 -2px;<br />	position: relative;<br />	top: -1px;<br />}<br /><br />.says {<br />	display: none;<br />}<br /><br />.comment-author,<br />.comment-awaiting-moderation,<br />.comment-content,<br />.comment-list .reply,<br />.comment-metadata {<br />	padding-left: 30px;<br />}<br /><br />.comment-edit-link {<br />	margin-left: 10px;<br />}<br /><br />.comment-edit-link:before {<br />	content: &quot;\f411&quot;;<br />}<br /><br />.comment-reply-link:before,<br />.comment-reply-login:before {<br />	content: &quot;\f412&quot;;<br />	margin-right: 2px;<br />}<br /><br />.comment-content {<br />	-webkit-hyphens: auto;<br />	-moz-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	-ms-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	word-wrap: break-word;<br />}<br /><br />.comment-content ul,<br />.comment-content ol {<br />	margin: 0 0 24px 22px;<br />}<br /><br />.comment-content li &gt; ul,<br />.comment-content li &gt; ol {<br />	margin-bottom: 0;<br />}<br /><br />.comment-content &gt; :last-child {<br />	margin-bottom: 0;<br />}<br /><br />.comment-list .children {<br />	list-style: none;<br />	margin-left: 15px;<br />}<br /><br />.comment-respond {<br />	margin-bottom: 24px;<br />	padding: 0;<br />}<br /><br />.comment .comment-respond {<br />	margin-top: 24px;<br />}<br /><br />.comment-respond h3 {<br />	margin-top: 0;<br />	margin-bottom: 24px;<br />}<br /><br />.comment-notes,<br />.comment-awaiting-moderation,<br />.logged-in-as,<br />.no-comments,<br />.form-allowed-tags,<br />.form-allowed-tags code {<br />	color: #767676;<br />}<br /><br />.comment-notes,<br />.comment-awaiting-moderation,<br />.logged-in-as {<br />	font-size: 14px;<br />	line-height: 1.7142857142;<br />}<br /><br />.no-comments {<br />	font-size: 16px;<br />	font-weight: 900;<br />	line-height: 1.5;<br />	margin-top: 24px;<br />	text-transform: uppercase;<br />}<br /><br />.comment-form label {<br />	display: block;<br />}<br /><br />.comment-form input[type=&quot;text&quot;],<br />.comment-form input[type=&quot;email&quot;],<br />.comment-form input[type=&quot;url&quot;] {<br />	width: 100%;<br />}<br /><br />.form-allowed-tags,<br />.form-allowed-tags code {<br />	font-size: 12px;<br />	line-height: 1.5;<br />}<br /><br />.required {<br />	color: #c0392b;<br />}<br /><br />.comment-reply-title small a {<br />	color: #2b2b2b;<br />	float: right;<br />	height: 24px;<br />	overflow: hidden;<br />	width: 24px;<br />}<br /><br />.comment-reply-title small a:hover {<br />	color: #41a62a;<br />}<br /><br />.comment-reply-title small a:before {<br />	content: &quot;\f405&quot;;<br />	font-size: 32px;<br />}<br /><br />.comment-navigation {<br />	font-size: 12px;<br />	line-height: 2;<br />	margin-bottom: 48px;<br />	text-transform: uppercase;<br />}<br /><br />.comment-navigation .nav-next,<br />.comment-navigation .nav-previous {<br />	display: inline-block;<br />}<br /><br />.comment-navigation .nav-previous a {<br />	margin-right: 10px;<br />}<br /><br />#comment-nav-above {<br />	margin-top: 36px;<br />	margin-bottom: 0;<br />}<br /><br /><br />/**<br /> * 7.0 Sidebars<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />/* Secondary */<br /><br />#secondary {<br />	background-color: #000;<br />	border-top: 1px solid #000;<br />	border-bottom: 1px solid rgba(255, 255, 255, 0.2);<br />	clear: both;<br />	color: rgba(255, 255, 255, 0.7);<br />	margin-top: -1px;<br />	padding: 0 10px;<br />	position: relative;<br />	z-index: 2;<br />}<br /><br />.site-description {<br />	display: none;<br />	font-size: 12px;<br />	font-weight: 400;<br />	line-height: 1.5;<br />}<br /><br />/* Primary Sidebar */<br /><br />.primary-sidebar {<br />	padding-top: 48px;<br />}<br /><br />.secondary-navigation + .primary-sidebar {<br />	padding-top: 0;<br />}<br /><br />/* Content Sidebar */<br /><br />.content-sidebar {<br />	border-top: 1px solid rgba(0, 0, 0, 0.1);<br />	border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	color: #767676;<br />	padding: 48px 10px 0;<br />}<br /><br /><br />/**<br /> * 7.1 Widgets<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />/* Primary Sidebar, Footer Sidebar */<br /><br />.widget {<br />	font-size: 14px;<br />	-webkit-hyphens: auto;<br />	-moz-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	-ms-hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	hyphens:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto;<br />	line-height: 1.2857142857;<br />	margin-bottom: 48px;<br />	width: 100%;<br />	word-wrap: break-word;<br />}<br /><br />.widget a {<br />	color: #fff;<br />}<br /><br />.widget a:hover {<br />	color: #41a62a;<br />}<br /><br />.widget h1,<br />.widget h2,<br />.widget h3,<br />.widget h4,<br />.widget h5,<br />.widget h6 {<br />	margin: 24px 0 12px;<br />}<br /><br />.widget h1 {<br />	font-size: 22px;<br />	line-height: 1.0909090909;<br />}<br /><br />.widget h2 {<br />	font-size: 20px;<br />	line-height: 1.2;<br />}<br /><br />.widget h3 {<br />	font-size: 18px;<br />	line-height: 1.3333333333;<br />}<br /><br />.widget h4 {<br />	font-size: 16px;<br />	line-height: 1.5;<br />}<br /><br />.widget h5 {<br />	font-size: 14px;<br />	line-height: 1.7142857142;<br />}<br /><br />.widget h6 {<br />	font-size: 12px;<br />	line-height: 2;<br />}<br /><br />.widget address {<br />	margin-bottom: 18px;<br />}<br /><br />.widget abbr[title] {<br />	border-color: rgba(255, 255, 255, 0.7);<br />}<br /><br />.widget mark,<br />.widget ins {<br />	color: #000;<br />}<br /><br />.widget pre,<br />.widget fieldset {<br />	border-color: rgba(255, 255, 255, 0.2);<br />}<br /><br />.widget code,<br />.widget kbd,<br />.widget tt,<br />.widget var,<br />.widget samp,<br />.widget pre {<br />	font-size: 12px;<br />	line-height: 1.5;<br />}<br /><br />.widget blockquote {<br />	color: rgba(255, 255, 255, 0.7);<br />	font-size: 18px;<br />	line-height: 1.5;<br />	margin-bottom: 18px;<br />}<br /><br />.widget blockquote cite {<br />	color: #fff;<br />	font-size: 14px;<br />	line-height: 1.2857142857;<br />}<br /><br />.widget dl,<br />.widget dd {<br />	margin-bottom: 18px;<br />}<br /><br />.widget ul,<br />.widget ol {<br />	list-style: none;<br />	margin: 0;<br />}<br /><br />.widget li &gt; ol,<br />.widget li &gt; ul {<br />	margin-left: 10px;<br />}<br /><br />.widget table,<br />.widget th,<br />.widget td {<br />	border-color: rgba(255, 255, 255, 0.2);<br />}<br /><br />.widget table {<br />	margin-bottom: 18px;<br />}<br /><br />.widget del {<br />	color: rgba(255, 255, 255, 0.4);<br />}<br /><br />.widget hr {<br />	background-color: rgba(255, 255, 255, 0.2);<br />}<br /><br />.widget p {<br />	margin-bottom: 18px;<br />}<br /><br />.widget-area .widget input,<br />.widget-area .widget textarea {<br />	background-color: rgba(255, 255, 255, 0.1);<br />	border-color: rgba(255, 255, 255, 0.2);<br />	color: #fff;<br />	font-size: 16px;<br />	padding: 1px 2px 2px 4px;<br />}<br /><br />.widget-area .widget input:focus,<br />.widget-area .widget textarea:focus {<br />	border-color: rgba(255, 255, 255, 0.3);<br />}<br /><br />.widget button,<br />.widget .button,<br />.widget input[type=&quot;button&quot;],<br />.widget input[type=&quot;reset&quot;],<br />.widget input[type=&quot;submit&quot;] {<br />	background-color: #24890d;<br />	border: 0;<br />	font-size: 12px;<br />	padding: 5px 15px 4px;<br />}<br /><br />.widget input[type=&quot;button&quot;]:hover,<br />.widget input[type=&quot;button&quot;]:focus,<br />.widget input[type=&quot;reset&quot;]:hover,<br />.widget input[type=&quot;reset&quot;]:focus,<br />.widget input[type=&quot;submit&quot;]:hover,<br />.widget input[type=&quot;submit&quot;]:focus {<br />	background-color: #41a62a;<br />}<br /><br />.widget input[type=&quot;button&quot;]:active,<br />.widget input[type=&quot;reset&quot;]:active,<br />.widget input[type=&quot;submit&quot;]:active {<br />	background-color: #55d737;<br />}<br /><br />.widget .wp-caption {<br />	color: rgba(255, 255, 255, 0.7);<br />	margin-bottom: 18px;<br />}<br /><br />.widget .widget-title {<br />	font-size: 14px;<br />	font-weight: 700;<br />	line-height: 1.7142857142;<br />	margin: 0 0 24px 0;<br />	text-transform: uppercase;<br />}<br /><br />.widget-title,<br />.widget-title a {<br />	color: #fff;<br />}<br /><br />.widget-title a:hover {<br />	color: #41a62a;<br />}<br /><br />/* Calendar Widget*/<br /><br />.widget_calendar table {<br />	line-height: 2;<br />	margin: 0;<br />}<br /><br />.widget_calendar caption {<br />	color: #fff;<br />	font-weight: 700;<br />	line-height: 1.7142857142;<br />	margin-bottom: 18px;<br />	text-align: left;<br />	text-transform: uppercase;<br />}<br /><br />.widget_calendar thead th {<br />	background-color: rgba(255, 255, 255, 0.1);<br />}<br /><br />.widget_calendar tbody td,<br />.widget_calendar thead th {<br />	text-align: center;<br />}<br /><br />.widget_calendar tbody a {<br />	background-color: #24890d;<br />	color: #fff;<br />	display: block;<br />}<br /><br />.widget_calendar tbody a:hover {<br />	background-color: #41a62a;<br />}<br /><br />.widget_calendar tbody a:hover {<br />	color: #fff;<br />}<br /><br />.widget_calendar #prev {<br />	padding-left: 5px;<br />}<br /><br />.widget_calendar #next {<br />	padding-right: 5px;<br />	text-align: right;<br />}<br /><br />/* Ephemera Widget*/<br /><br />.widget_twentyfourteen_ephemera &gt; ol &gt; li {<br />	border-bottom: 1px solid rgba(255, 255, 255, 0.2);<br />	margin-bottom: 18px;<br />	padding: 0;<br />}<br /><br />.widget_twentyfourteen_ephemera .hentry {<br />	margin: 0;<br />	max-width: 100%;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-title,<br />.widget_twentyfourteen_ephemera .entry-meta,<br />.widget_twentyfourteen_ephemera .wp-caption-text,<br />.widget_twentyfourteen_ephemera .post-format-archive-link,<br />.widget_twentyfourteen_ephemera .entry-content table {<br />	font-size: 12px;<br />	line-height: 1.5;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-title {<br />	display: inline;<br />	font-weight: 400;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-meta {<br />	margin-bottom: 18px;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-meta a {<br />	color: rgba(255, 255, 255, 0.7);<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-meta a:hover {<br />	color: #41a62a;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-content ul,<br />.widget_twentyfourteen_ephemera .entry-content ol {<br />	margin: 0 0 18px 20px;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-content ul {<br />	list-style: disc;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-content ol {<br />	list-style: decimal;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-content li &gt; ul,<br />.widget_twentyfourteen_ephemera .entry-content li &gt; ol {<br />	margin: 0 0 0 20px;<br />}<br /><br />.widget_twentyfourteen_ephemera .entry-content th,<br />.widget_twentyfourteen_ephemera .entry-content td {<br />	padding: 6px;<br />}<br /><br />.widget_twentyfourteen_ephemera .post-format-archive-link {<br />	font-weight: 700;<br />	text-transform: uppercase;<br />}<br /><br />/* List Style Widgets*/<br /><br />.widget_archive li,<br />.widget_categories li,<br />.widget_links li,<br />.widget_meta li,<br />.widget_nav_menu li,<br />.widget_pages li,<br />.widget_recent_comments li,<br />.widget_recent_entries li {<br />	border-top: 1px solid rgba(255, 255, 255, 0.2);<br />	padding: 8px 0 9px;<br />}<br /><br />.widget_archive li:first-child,<br />.widget_categories li:first-child,<br />.widget_links li:first-child,<br />.widget_meta li:first-child,<br />.widget_nav_menu li:first-child,<br />.widget_pages li:first-child,<br />.widget_recent_comments li:first-child,<br />.widget_recent_entries li:first-child {<br />	border-top: 0;<br />}<br /><br />.widget_categories li ul,<br />.widget_nav_menu li ul,<br />.widget_pages li ul {<br />	border-top: 1px solid rgba(255, 255, 255, 0.2);<br />	margin-top: 9px;<br />}<br /><br />.widget_categories li li:last-child,<br />.widget_nav_menu li li:last-child,<br />.widget_pages li li:last-child {<br />	padding-bottom: 0;<br />}<br /><br />/* Recent Posts Widget */<br /><br />.widget_recent_entries .post-date {<br />	display: block;<br />}<br /><br />/* RSS Widget */<br /><br />.rsswidget img {<br />	margin-top: -4px;<br />}<br /><br />.rssSummary {<br />	margin: 9px 0;<br />}<br /><br />.rss-date {<br />	display: block;<br />}<br /><br />.widget_rss li {<br />	margin-bottom: 18px;<br />}<br /><br />.widget_rss li:last-child {<br />	margin-bottom: 0;<br />}<br /><br />/* Text Widget */<br /><br />.widget_text &gt; div &gt; :last-child {<br />	margin-bottom: 0;<br />}<br /><br /><br />/**<br /> * 7.2 Content Sidebar Widgets<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.content-sidebar .widget a {<br />	color: #24890d;<br />}<br /><br />.content-sidebar .widget a:hover {<br />	color: #41a62a;<br />}<br /><br />.content-sidebar .widget pre {<br />	border-color: rgba(0, 0, 0, 0.1);<br />}<br /><br />.content-sidebar .widget mark,<br />.content-sidebar .widget ins {<br />	color: #2b2b2b;<br />}<br /><br />.content-sidebar .widget abbr[title] {<br />	border-color: #2b2b2b;<br />}<br /><br />.content-sidebar .widget fieldset {<br />	border-color: rgba(0, 0, 0, 0.1);<br />}<br /><br />.content-sidebar .widget blockquote {<br />	color: #767676;<br />}<br /><br />.content-sidebar .widget blockquote cite {<br />	color: #2b2b2b;<br />}<br /><br />.content-sidebar .widget li &gt; ol,<br />.content-sidebar .widget li &gt; ul {<br />	margin-left: 18px;<br />}<br /><br />.content-sidebar .widget table,<br />.content-sidebar .widget th,<br />.content-sidebar .widget td {<br />	border-color: rgba(0, 0, 0, 0.1);<br />}<br /><br />.content-sidebar .widget del {<br />	color: #767676;<br />}<br /><br />.content-sidebar .widget hr {<br />	background-color: rgba(0, 0, 0, 0.1);<br />}<br /><br />.content-sidebar .widget input,<br />.content-sidebar .widget textarea {<br />	background-color: #fff;<br />	border-color: rgba(0, 0, 0, 0.1);<br />	color: #2b2b2b;<br />}<br /><br />.content-sidebar .widget input:focus,<br />.content-sidebar .widget textarea:focus {<br />	border-color: rgba(0, 0, 0, 0.3);<br />}<br /><br />.content-sidebar .widget input[type=&quot;button&quot;],<br />.content-sidebar .widget input[type=&quot;reset&quot;],<br />.content-sidebar .widget input[type=&quot;submit&quot;] {<br />	background-color: #24890d;<br />	border: 0;<br />	color: #fff;<br />}<br /><br />.content-sidebar .widget input[type=&quot;button&quot;]:hover,<br />.content-sidebar .widget input[type=&quot;button&quot;]:focus,<br />.content-sidebar .widget input[type=&quot;reset&quot;]:hover,<br />.content-sidebar .widget input[type=&quot;reset&quot;]:focus,<br />.content-sidebar .widget input[type=&quot;submit&quot;]:hover,<br />.content-sidebar .widget input[type=&quot;submit&quot;]:focus {<br />	background-color: #41a62a;<br />}<br /><br />.content-sidebar .widget input[type=&quot;button&quot;]:active,<br />.content-sidebar .widget input[type=&quot;reset&quot;]:active,<br />.content-sidebar .widget input[type=&quot;submit&quot;]:active {<br />	background-color: #55d737;<br />}<br /><br />.content-sidebar .widget .wp-caption {<br />	color: #767676;<br />}<br /><br />.content-sidebar .widget .widget-title {<br />	border-top: 5px solid #000;<br />	color: #2b2b2b;<br />	font-size: 14px;<br />	font-weight: 900;<br />	margin: 0 0 18px;<br />	padding-top: 7px;<br />	text-transform: uppercase;<br />}<br /><br />.content-sidebar .widget .widget-title a {<br />	color: #2b2b2b;<br />}<br /><br />.content-sidebar .widget .widget-title a:hover {<br />	color: #41a62a;<br />}<br /><br />/* List Style Widgets*/<br /><br />.content-sidebar .widget_archive li,<br />.content-sidebar .widget_categories li,<br />.content-sidebar .widget_links li,<br />.content-sidebar .widget_meta li,<br />.content-sidebar .widget_nav_menu li,<br />.content-sidebar .widget_pages li,<br />.content-sidebar .widget_recent_comments li,<br />.content-sidebar .widget_recent_entries li,<br />.content-sidebar .widget_categories li ul,<br />.content-sidebar .widget_nav_menu li ul,<br />.content-sidebar .widget_pages li ul {<br />	border-color: rgba(0, 0, 0, 0.1);<br />}<br /><br />/* Calendar Widget */<br /><br />.content-sidebar .widget_calendar caption {<br />	color: #2b2b2b;<br />	font-weight: 900;<br />}<br /><br />.content-sidebar .widget_calendar thead th {<br />	background-color: rgba(0, 0, 0, 0.02);<br />}<br /><br />.content-sidebar .widget_calendar tbody a,<br />.content-sidebar .widget_calendar tbody a:hover {<br />	color: #fff;<br />}<br /><br />/* Ephemera widget*/<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .widget-title {<br />	line-height: 1.2857142857;<br />	padding-top: 1px;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .widget-title:before {<br />	background-color: #000;<br />	color: #fff;<br />	margin: -1px 9px 0 0;<br />	padding: 6px 0 9px;<br />	text-align: center;<br />	vertical-align: middle;<br />	width: 36px;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .video.widget-title:before {<br />	content: &quot;\f104&quot;;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .audio.widget-title:before {<br />	content: &quot;\f109&quot;;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .image.widget-title:before {<br />	content: &quot;\f473&quot;;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .gallery.widget-title:before {<br />	content: &quot;\f103&quot;;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .aside.widget-title:before {<br />	content: &quot;\f101&quot;;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .quote.widget-title:before {<br />	content: &quot;\f106&quot;;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .link.widget-title:before {<br />	content: &quot;\f107&quot;;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera &gt; ol &gt; li {<br />	border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .entry-meta {<br />	color: #ccc;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .entry-meta a {<br />	color: #767676;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .entry-meta a:hover {<br />	color: #41a62a;<br />}<br /><br />.content-sidebar.widget_twentyfourteen_ephemera blockquote cite {<br />	font-size: 13px;<br />	line-height: 1.3846153846;<br />}<br /><br />.content-sidebar .widget_twentyfourteen_ephemera .post-format-archive-link {<br />	font-weight: 900;<br />}<br /><br /><br />/**<br /> * 8.0 Footer<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />#supplementary {<br />	padding: 0 10px;<br />}<br /><br />.site-footer,<br />.site-info,<br />.site-info a {<br />	color: rgba(255, 255, 255, 0.7);<br />}<br /><br />.site-footer {<br />	background-color: #000;<br />	font-size: 12px;<br />	position: relative;<br />	z-index: 3;<br />}<br /><br />.footer-sidebar {<br />	padding-top: 48px;<br />}<br /><br />.site-info {<br />	padding: 15px 10px;<br />}<br /><br />#supplementary + .site-info {<br />	border-top: 1px solid rgba(255, 255, 255, 0.2);<br />}<br /><br />.site-info a:hover {<br />	color: #41a62a;<br />}<br /><br /><br />/**<br /> * 9.0 Featured Content<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.featured-content {<br />	background: #000 url(images/pattern-dark.svg) repeat fixed;<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	position: relative;<br />	width: 100%;<br />}<br /><br />.featured-content-inner {<br />	overflow: hidden;<br />}<br /><br />.featured-content .hentry {<br />	color: #fff;<br />	margin: 0;<br />	max-width: 100%;<br />	width: 100%;<br />}<br /><br />.featured-content .post-thumbnail,<br />.featured-content .post-thumbnail:hover {<br />	background: transparent;<br />}<br /><br />.featured-content .post-thumbnail {<br />	display: block;<br />	position: relative;<br />	padding-top: 55.357142857%;<br />	overflow: hidden;<br />}<br /><br />.featured-content .post-thumbnail img {<br />	left: 0;<br />	position: absolute;<br />	top: 0;<br />}<br /><br />.featured-content .entry-header {<br />	background-color: #000;<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	min-height: 96px;<br />	overflow: hidden;<br />	padding: 24px 10px;<br />}<br /><br />.featured-content a {<br />	color: #fff;<br />}<br /><br />.featured-content a:hover {<br />	color: #41a62a;<br />}<br /><br />.featured-content .entry-meta {<br />	color: #fff;<br />	font-size: 11px;<br />	font-weight: 700;<br />	line-height: 1.0909090909;<br />	margin-bottom: 12px;<br />}<br /><br />.featured-content .cat-links {<br />	font-weight: 700;<br />}<br /><br />.featured-content .entry-title {<br />	font-size: 18px;<br />	font-weight: 300;<br />	line-height: 1.3333333333;<br />	margin: 0;<br />	text-transform: uppercase;<br />}<br /><br /><br />/* Slider */<br /><br />.slider .featured-content .hentry {<br />	-webkit-backface-visibility: hidden;<br />	display: none;<br />	position: relative;<br />}<br /><br />.slider .featured-content .post-thumbnail {<br />	padding-top: 55.49132947%;<br />}<br /><br />.slider-control-paging {<br />	background-color: #000;<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	float: left;<br />	list-style: none;<br />	margin: -24px 0 0 0;<br />	position: relative;<br />	width: 100%;<br />	z-index: 3;<br />}<br /><br />.slider-control-paging li {<br />	float: left;<br />	margin: 2px 4px 2px 0;<br />}<br /><br />.slider-control-paging li:last-child {<br />	margin-right: 0;<br />}<br /><br />.slider-control-paging a {<br />	cursor: pointer;<br />	display: block;<br />	height: 44px;<br />	position: relative;<br />	text-indent: -999em;<br />	width: 44px;<br />}<br /><br />.slider-control-paging a:before {<br />	background-color: #4d4d4d;<br />	content: &quot;&quot;;<br />	height: 12px;<br />	left: 10px;<br />	position: absolute;<br />	top: 16px;<br />	width: 12px;<br />}<br /><br />.slider-control-paging a:hover:before {<br />	background-color: #41a62a;<br />}<br /><br />.slider-control-paging .slider-active:before,<br />.slider-control-paging .slider-active:hover:before {<br />	background-color: #24890d;<br />}<br /><br />.slider-direction-nav {<br />	clear: both;<br />	list-style: none;<br />	margin: 0;<br />	position: relative;<br />	width: 100%;<br />	z-index: 3;<br />}<br /><br />.slider-direction-nav li {<br />	border-color: #fff;<br />	border-style: solid;<br />	border-width: 2px 1px 0 0;<br />	-webkit-box-sizing: border-box;<br />	-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />	float: left;<br />	text-align: center;<br />	width: 50%;<br />}<br /><br />.slider-direction-nav li:last-child {<br />	border-width: 2px 0 0 1px;<br />}<br /><br />.slider-direction-nav a {<br />	background-color: #000;<br />	display: block;<br />	font-size: 0;<br />	height: 46px;<br />}<br /><br />.slider-direction-nav a:hover {<br />	background-color: #24890d;<br />}<br /><br />.slider-direction-nav a:before {<br />	color: #fff;<br />	content: &quot;\f430&quot;;<br />	font-size: 32px;<br />	line-height: 46px;<br />}<br /><br />.slider-direction-nav .slider-next:before {<br />	content: &quot;\f429&quot;;<br />}<br /><br />.slider-direction-nav .slider-disabled {<br />	display: none;<br />}<br /><br /><br />/**<br /> * 10.0 Multisite<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />.site-main .widecolumn {<br />	padding-top: 72px;<br />	width: auto;<br />}<br />.site-main .mu_register,<br />.widecolumn &gt; h2,<br />.widecolumn &gt; form {<br />	margin: 0 auto 48px;<br />	max-width: 474px;<br />	padding: 0 30px;<br />}<br /><br />.site-main .mu_register #blog_title,<br />.site-main .mu_register #user_email,<br />.site-main .mu_register #blogname,<br />.site-main .mu_register #user_name {<br />	font-size: inherit;<br />	width: 90%;<br />}<br /><br />.site-main .mu_register input[type=&quot;submit&quot;],<br />.widecolumn #submit {<br />	font-size: inherit;<br />	width: auto;<br />}<br /><br /><br />/**<br /> * 11.0 Media Queries<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />/* Does the same thing as &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;,<br /> * but in the future W3C standard way. -ms- prefix is required for IE10+ to<br /> * render responsive styling in Windows 8 &quot;snapped&quot; views; IE10+ does not honor<br /> * the meta tag. See https://core.trac.wordpress.org/ticket/25888.<br /> */<br />@-ms-viewport {<br />	width: device-width;<br />}<br /><br />@viewport {<br />	width: device-width;<br />}<br /><br />@media screen and (max-width: 400px) {<br />	.list-view .site-content .post-thumbnail {<br />		background: none;<br />		width: auto;<br />		z-index: 2;<br />	}<br /><br />	.list-view .site-content .post-thumbnail img {<br />		float: left;<br />		margin: 0 10px 3px 0;<br />		width: 84px;<br />	}<br /><br />	.list-view .site-content .entry-header {<br />		background-color: transparent;<br />		padding: 0;<br />	}<br /><br />	.list-view .content-area {<br />		padding: 0 10px;<br />	}<br /><br />	.list-view .site-content .hentry {<br />		border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />		margin: 0;<br />		min-height: 60px;<br />		padding: 12px 0 9px;<br />	}<br /><br />	.list-view .site-content .cat-links,<br />	.list-view .site-content .type-post .entry-content,<br />	.list-view .site-content .type-page .entry-content,<br />	.list-view .site-content .type-post .entry-summary,<br />	.list-view .site-content .type-page .entry-summary,<br />	.list-view .site-content footer.entry-meta {<br />		display: none;<br />	}<br /><br />	.list-view .site-content .entry-title {<br />		clear: none;<br />		font-size: 15px;<br />		font-weight: 900;<br />		line-height: 1.2;<br />		margin-bottom: 6px;<br />		text-transform: none;<br />	}<br /><br />	.list-view .site-content .format-aside .entry-title,<br />	.list-view .site-content .format-link .entry-title,<br />	.list-view .site-content .format-quote .entry-title {<br />		display: block;<br />	}<br /><br />	.list-view .site-content .entry-meta {<br />		background-color: transparent;<br />		clear: none;<br />		margin: 0;<br />		text-transform: none;<br />	}<br /><br />	.archive-header,<br />	.page-header {<br />		border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />		margin: 24px auto 0;<br />		padding-bottom: 24px;<br />	}<br /><br />	.error404 .page-header {<br />		border-bottom: 0;<br />		margin: 0 auto 24px;<br />		padding: 0 10px;<br />	}<br />}<br /><br />@media screen and (min-width: 401px) {<br />	a.post-thumbnail:hover img {<br />		opacity: 0.85;<br />	}<br /><br />	.full-size-link:before,<br />	.parent-post-link:before,<br />	.site-content span + .byline:before,<br />	.site-content span + .comments-link:before,<br />	.site-content span + .edit-link:before,<br />	.site-content span + .entry-date:before {<br />		content: &quot;&quot;;<br />	}<br /><br />	.attachment span.entry-date:before,<br />	.entry-content .edit-link a:before,<br />	.entry-meta .edit-link a:before,<br />	.site-content .byline a:before,<br />	.site-content .comments-link a:before,<br />	.site-content .entry-date a:before,<br />	.site-content .featured-post:before,<br />	.site-content .full-size-link a:before,<br />	.site-content .parent-post-link a:before,<br />	.site-content .post-format a:before {<br />		-webkit-font-smoothing: antialiased;<br />		display: inline-block;<br />		font: normal 16px/1 Genericons;<br />		text-decoration: inherit;<br />		vertical-align: text-bottom;<br />	}<br /><br />	.site-content .entry-meta &gt; span {<br />		margin-right: 10px;<br />	}<br /><br />	.site-content .format-video .post-format a:before {<br />		content: &quot;\f104&quot;;<br />	}<br /><br />	.site-content .format-audio .post-format a:before {<br />		content: &quot;\f109&quot;;<br />	}<br /><br />	.site-content .format-image .post-format a:before {<br />		content: &quot;\f473&quot;;<br />	}<br /><br />	.site-content .format-quote .post-format a:before {<br />		content: &quot;\f106&quot;;<br />		margin-right: 2px;<br />	}<br /><br />	.site-content .format-gallery .post-format a:before {<br />		content: &quot;\f103&quot;;<br />		margin-right: 4px;<br />	}<br /><br />	.site-content .format-aside .post-format a:before {<br />		content: &quot;\f101&quot;;<br />		margin-right: 2px;<br />	}<br /><br />	.site-content .format-link .post-format a:before {<br />		content: &quot;\f107&quot;;<br />		position: relative;<br />		top: 1px;<br />	}<br /><br />	.site-content .featured-post:before {<br />		content: &quot;\f308&quot;;<br />		margin-right: 3px;<br />		position: relative;<br />		top: 1px;<br />	}<br /><br />	.site-content .entry-date a:before,<br />	.attachment .site-content span.entry-date:before {<br />		content: &quot;\f303&quot;;<br />		margin-right: 1px;<br />		position: relative;<br />		top: 1px;<br />	}<br /><br />	.site-content .byline a:before {<br />		content: &quot;\f304&quot;;<br />	}<br /><br />	.site-content .comments-link a:before {<br />		content: &quot;\f300&quot;;<br />		margin-right: 2px;<br />	}<br /><br />	.entry-content .edit-link a:before,<br />	.entry-meta .edit-link a:before {<br />		content: &quot;\f411&quot;;<br />	}<br /><br />	.site-content .full-size-link a:before {<br />		content: &quot;\f402&quot;;<br />		margin-right: 1px;<br />	}<br /><br />	.site-content .parent-post-link a:before {<br />		content: &quot;\f301&quot;;<br />	}<br /><br />	.list-view .site-content .hentry {<br />		border-top: 1px solid rgba(0, 0, 0, 0.1);<br />		padding-top: 48px;<br />	}<br /><br />	.list-view .site-content .hentry:first-of-type,<br />	.list-view .site-content .hentry.has-post-thumbnail {<br />		border-top: 0;<br />		padding-top: 0;<br />	}<br /><br />	.archive-header,<br />	.page-header {<br />		margin: 0 auto 60px;<br />		padding: 0 10px;<br />	}<br /><br />	.error404 .page-header {<br />		margin-bottom: 24px;<br />	}<br />}<br /><br />@media screen and (min-width: 594px) {<br />	.site-content .entry-header {<br />		padding-right: 30px;<br />		padding-left: 30px;<br />	}<br /><br />	.site-content .has-post-thumbnail .entry-header {<br />		margin-top: -48px;<br />	}<br />}<br /><br />@media screen and (min-width: 673px) {<br />	.header-main {<br />		padding: 0 30px;<br />	}<br /><br />	.search-toggle {<br />		margin-right: 18px;<br />	}<br /><br />	.search-box .search-field {<br />		width: 50%;<br />	}<br /><br />	.content-area {<br />		float: left;<br />		width: 100%;<br />	}<br /><br />	.site-content {<br />		margin-right: 33.33333333%;<br />	}<br /><br />	.site-content .has-post-thumbnail .entry-header {<br />		margin-top: 0;<br />	}<br /><br />	.archive-header,<br />	.comments-area,<br />	.image-navigation,<br />	.page-header,<br />	.page-content,<br />	.post-navigation,<br />	.site-content .entry-content,<br />	.site-content .entry-summary,<br />	.site-content footer.entry-meta {<br />		padding-right: 30px;<br />		padding-left: 30px;<br />	}<br /><br />	.singular .site-content .hentry.has-post-thumbnail {<br />		margin-top: 0;<br />	}<br /><br />	.full-width .site-content {<br />		margin-right: 0;<br />	}<br /><br />	.full-width .site-content .has-post-thumbnail .entry-header,<br />	.full-width .site-content .hentry.has-post-thumbnail:first-child {<br />		margin-top: -48px;<br />	}<br /><br />	#secondary,<br />	#supplementary {<br />		padding: 0 30px;<br />	}<br /><br />	.content-sidebar {<br />		border: 0;<br />		float: right;<br />		margin-left: -33.33333333%;<br />		padding: 48px 30px 24px;<br />		position: relative;<br />		width: 33.33333333%;<br />	}<br /><br />	.grid .featured-content .hentry {<br />		float: left;<br />		width: 50%;<br />	}<br /><br />	.grid .featured-content .hentry:nth-child( 2n+1 ) {<br />		clear: both;<br />	}<br /><br />	.grid .featured-content .entry-header {<br />		border-color: #000;<br />		border-style: solid;<br />		border-width: 12px 10px;<br />		height: 96px;<br />		padding: 0;<br />	}<br /><br />	.slider .featured-content .entry-title {<br />		font-size: 22px;<br />		line-height: 1.0909090909;<br />	}<br /><br />	.slider .featured-content .entry-header {<br />		min-height: inherit;<br />		padding: 24px 30px 48px;<br />		position: absolute;<br />		left: 0;<br />		bottom: 0;<br />		width: 50%;<br />		z-index: 3;<br />	}<br /><br />	.slider-control-paging {<br />		background: transparent;<br />		margin-top: -48px;<br />		padding-left: 20px;<br />		width: 50%;<br />	}<br /><br />	.slider-direction-nav {<br />		clear: none;<br />		float: right;<br />		margin-top: -48px;<br />		width: 98px;<br />	}<br /><br />	.slider-direction-nav li {<br />		border: 0;<br />		padding: 0 1px 0 0;<br />	}<br /><br />	.slider-direction-nav li:last-child {<br />		padding: 0 0 0 1px;<br />	}<br /><br />	.slider-direction-nav a {<br />		height: 48px;<br />	}<br /><br />	.slider-direction-nav a:before {<br />		line-height: 48px;<br />	}<br /><br />	.site-info {<br />		padding: 15px 30px;<br />	}<br />}<br /><br />@media screen and (min-width: 783px) {<br />	.site-title {<br />		/* Search-toggle width = 48px */<br />		max-width: -webkit-calc(100% - 48px);<br />		max-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(100% - 48px);<br />	}<br /><br />	.header-main {<br />		padding-right: 0;<br />	}<br /><br />	.search-toggle {<br />		margin-right: 0;<br />	}<br /><br />	/* Fixed Header */<br /><br />	.masthead-fixed .site-header {<br />		position: fixed;<br />		top: 0;<br />	}<br /><br />	.admin-bar.masthead-fixed .site-header {<br />		top: 32px;<br />	}<br /><br />	.masthead-fixed .site-main {<br />		margin-top: 48px;<br />	}<br /><br />	/* Navigation */<br /><br />	.site-navigation li .current_page_item &gt; a,<br />	.site-navigation li .current_page_ancestor &gt; a,<br />	.site-navigation li .current-menu-item &gt; a,<br />	.site-navigation li .current-menu-ancestor &gt; a {<br />		color: #fff;<br />	}<br /><br />	/* Primary Navigation */<br /><br />	.primary-navigation {<br />		float: right;<br />		font-size: 11px;<br />		margin: 0 1px 0 -12px;<br />		padding: 0;<br />		text-transform: uppercase;<br />	}<br /><br />	.primary-navigation .menu-toggle {<br />		display: none;<br />		padding: 0;<br />	}<br /><br />	.primary-navigation .nav-menu {<br />		border-bottom: 0;<br />		display: block;<br />	}<br /><br />	.primary-navigation.toggled-on {<br />		border-bottom: 0;<br />		margin: 0;<br />		padding: 0;<br />	}<br /><br />	.primary-navigation li {<br />		border: 0;<br />		display: inline-block;<br />		height: 48px;<br />		line-height: 48px;<br />		position: relative;<br />	}<br /><br />	.primary-navigation a {<br />		display: inline-block;<br />		padding: 0 12px;<br />		white-space: nowrap;<br />	}<br /><br />	.primary-navigation ul ul {<br />		background-color: #24890d;<br />		float: left;<br />		margin: 0;<br />		position: absolute;<br />		top: 48px;<br />		left: -999em;<br />		z-index: 99999;<br />	}<br /><br />	.primary-navigation li li {<br />		border: 0;<br />		display: block;<br />		height: auto;<br />		line-height: 1.0909090909;<br />	}<br /><br />	.primary-navigation ul ul ul {<br />		left: -999em;<br />		top: 0;<br />	}<br /><br />	.primary-navigation ul ul a {<br />		padding: 18px 12px;<br />		white-space: normal;<br />		width: 176px;<br />	}<br /><br />	.primary-navigation li:hover &gt; a,<br />	.primary-navigation li.focus &gt; a {<br />		background-color: #24890d;<br />		color: #fff;<br />	}<br /><br />	.primary-navigation ul ul a:hover,<br />	.primary-navigation ul ul li.focus &gt; a {<br />		background-color: #41a62a;<br />	}<br /><br />	.primary-navigation ul li:hover &gt; ul,<br />	.primary-navigation ul li.focus &gt; ul {<br />		left: auto;<br />	}<br /><br />	.primary-navigation ul ul li:hover &gt; ul,<br />	.primary-navigation ul ul li.focus &gt; ul {<br />		left: 100%;<br />	}<br /><br />	.primary-navigation .menu-item-has-children &gt; a,<br />	.primary-navigation .page_item_has_children &gt; a {<br />		padding-right: 26px;<br />	}<br /><br />	.primary-navigation .menu-item-has-children &gt; a:after,<br />	.primary-navigation .page_item_has_children &gt; a:after {<br />		-webkit-font-smoothing: antialiased;<br />		content: &quot;\f502&quot;;<br />		display: inline-block;<br />		font: normal 8px/1 Genericons;<br />		position: absolute;<br />		right: 12px;<br />		top: 22px;<br />		vertical-align: text-bottom;<br />	}<br /><br />	.primary-navigation li .menu-item-has-children &gt; a,<br />	.primary-navigation li .page_item_has_children &gt; a {<br />		padding-right: 20px;<br />		width: 168px;<br />	}<br /><br />	.primary-navigation .menu-item-has-children li.menu-item-has-children &gt; a:after,<br />	.primary-navigation .menu-item-has-children li.page_item_has_children &gt; a:after,<br />	.primary-navigation .page_item_has_children li.menu-item-has-children &gt; a:after,<br />	.primary-navigation .page_item_has_children li.page_item_has_children &gt; a:after {<br />		content: &quot;\f501&quot;;<br />		right: 8px;<br />		top: 20px;<br />	}<br />}<br /><br />@media screen and (min-width: 810px) {<br />	.attachment .entry-attachment .attachment {<br />		margin-right: -168px;<br />		margin-left: -168px;<br />		max-width: 810px;<br />	}<br /><br />	.attachment .site-content .attachment img {<br />		display: block;<br />		margin: 0 auto;<br />	}<br /><br />	.contributor-avatar {<br />		margin-left: -168px;<br />	}<br /><br />	.contributor-summary {<br />		float: left;<br />	}<br /><br />	.full-width .site-content blockquote.alignleft,<br />	.full-width .site-content blockquote.alignright {<br />		width: -webkit-calc(50% + 130px);<br />		width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(50% + 130px);<br />	}<br /><br />	.full-width .site-content blockquote.alignleft,<br />	.full-width .site-content img.size-full.alignleft,<br />	.full-width .site-content img.size-large.alignleft,<br />	.full-width .site-content img.size-medium.alignleft,<br />	.full-width .site-content .wp-caption.alignleft {<br />		margin-left: -168px;<br />	}<br /><br />	.full-width .site-content .alignleft {<br />		clear: left;<br />	}<br /><br />	.full-width .site-content blockquote.alignright,<br />	.full-width .site-content img.size-full.alignright,<br />	.full-width .site-content img.size-large.alignright,<br />	.full-width .site-content img.size-medium.alignright,<br />	.full-width .site-content .wp-caption.alignright {<br />		margin-right: -168px;<br />	}<br /><br />	.full-width .site-content .alignright {<br />		clear: right;<br />	}<br />}<br /><br />@media screen and (min-width: 846px) {<br />	.content-area,<br />	.content-sidebar {<br />		padding-top: 72px;<br />	}<br /><br />	.site-content .has-post-thumbnail .entry-header {<br />		margin-top: -48px;<br />	}<br /><br />	.comment-list .trackback,<br />	.comment-list .pingback,<br />	.comment-list article {<br />		margin-bottom: 36px;<br />		padding-top: 36px;<br />	}<br /><br />	.comment-author .avatar {<br />		height: 34px;<br />		top: 2px;<br />		width: 34px;<br />	}<br /><br />	.comment-author,<br />	.comment-awaiting-moderation,<br />	.comment-content,<br />	.comment-list .reply,<br />	.comment-metadata {<br />		padding-left: 50px;<br />	}<br /><br />	.comment-list .children {<br />		margin-left: 20px;<br />	}<br /><br />	.full-width .site-content .hentry.has-post-thumbnail:first-child {<br />		margin-top: -72px;<br />	}<br /><br />	.featured-content {<br />		margin-bottom: 0;<br />	}<br />}<br /><br />@media screen and (min-width: 1008px) {<br />	.search-box-wrapper {<br />		padding-left: 182px;<br />	}<br /><br />	.main-content {<br />		float: left;<br />	}<br /><br />	.site-content {<br />		margin-right: 29.04761904%;<br />		margin-left: 182px;<br />	}<br /><br />	.site-content .entry-header {<br />		margin-top: 0;<br />	}<br /><br />	.site-content .has-post-thumbnail .entry-header {<br />		margin-top: 0;<br />	}<br /><br />	.content-sidebar {<br />		margin-left: -29.04761904%;<br />		width: 29.04761904%;<br />	}<br /><br />	.site:before {<br />		background-color: #000;<br />		content: &quot;&quot;;<br />		display: block;<br />		height: 100%;<br />		min-height: 100%;<br />		position: absolute;<br />		top: 0;<br />		left: 0;<br />		width: 182px;<br />		z-index: 2;<br />	}<br /><br />	#secondary {<br />		background-color: transparent;<br />		border: 0;<br />		clear: none;<br />		float: left;<br />		margin: 0 0 0 -100%;<br />		min-height: 100vh;<br />		width: 122px;<br />	}<br /><br />	.primary-sidebar {<br />		padding-top: 0;<br />	}<br /><br />	.site-description {<br />		display: block;<br />		margin: 0 0 18px;<br />	}<br /><br />	.site-description:empty {<br />		margin: 0;<br />	}<br /><br />	.secondary-navigation {<br />		font-size: 11px;<br />		margin: 0 -30px 48px;<br />		width: 182px;<br />	}<br /><br />	.secondary-navigation li {<br />		border-top: 1px solid rgba(255, 255, 255, 0.2);<br />		position: relative;<br />	}<br /><br />	.secondary-navigation a {<br />		padding: 10px 30px;<br />	}<br /><br />	.secondary-navigation ul ul {<br />		background-color: #24890d;<br />		position: absolute;<br />		top: 0;<br />		left: -999em;<br />		width: 182px;<br />		z-index: 99999;<br />	}<br /><br />	.secondary-navigation li li {<br />		border-top: 0;<br />	}<br /><br />	.secondary-navigation li:hover &gt; a,<br />	.secondary-navigation li.focus &gt; a {<br />		background-color: #24890d;<br />		color: #fff;<br />	}<br /><br />	.secondary-navigation ul ul a:hover,<br />	.secondary-navigation ul ul li.focus &gt; a {<br />		background-color: #41a62a;<br />	}<br /><br />	.secondary-navigation ul li:hover &gt; ul,<br />	.secondary-navigation ul li.focus &gt; ul {<br />		left: 162px;<br />	}<br /><br />	.secondary-navigation .menu-item-has-children &gt; a {<br />		padding-right: 38px;<br />	}<br /><br />	.secondary-navigation .menu-item-has-children &gt; a:after {<br />		-webkit-font-smoothing: antialiased;<br />		content: &quot;\f501&quot;;<br />		display: inline-block;<br />		font: normal 8px/1 Genericons;<br />		position: absolute;<br />		right: 26px;<br />		top: 14px;<br />		vertical-align: text-bottom;<br />	}<br /><br />	.footer-sidebar .widget,<br />	.primary-sidebar .widget {<br />		font-size: 12px;<br />		line-height: 1.5;<br />	}<br /><br />	.footer-sidebar .widget {<br />		-webkit-box-sizing: border-box;<br />		-moz-box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />		box-sizing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-box;<br />		float: left;<br />		padding: 0 30px;<br />		width: 25%;<br />	}<br /><br />	.footer-sidebar .widget h1,<br />	.primary-sidebar .widget h1 {<br />		font-size: 20px;<br />		line-height: 1.2;<br />	}<br /><br />	.footer-sidebar .widget h2,<br />	.primary-sidebar .widget h2 {<br />		font-size: 18px;<br />		line-height: 1.3333333333;<br />	}<br /><br />	.footer-sidebar .widget h3,<br />	.primary-sidebar .widget h3 {<br />		font-size: 16px;<br />		line-height: 1.5;<br />	}<br /><br />	.footer-sidebar .widget h4,<br />	.primary-sidebar .widget h4 {<br />		font-size: 14px;<br />		line-height: 1.7142857142;<br />	}<br /><br />	.footer-sidebar .widget h5,<br />	.primary-sidebar .widget h5 {<br />		font-size: 12px;<br />		line-height: 2;<br />	}<br /><br />	.footer-sidebar .widget h6,<br />	.primary-sidebar .widget h6 {<br />		font-size: 11px;<br />		line-height: 2.1818181818;<br />	}<br /><br />	.footer-sidebar .widget code,<br />	.footer-sidebar .widget kbd,<br />	.footer-sidebar .widget tt,<br />	.footer-sidebar .widget var,<br />	.footer-sidebar .widget samp,<br />	.footer-sidebar .widget pre,<br />	.primary-sidebar .widget code,<br />	.primary-sidebar .widget kbd,<br />	.primary-sidebar .widget tt,<br />	.primary-sidebar .widget var,<br />	.primary-sidebar .widget samp,<br />	.primary-sidebar .widget pre {<br />		font-size: 11px;<br />		line-height: 1.6363636363;<br />	}<br /><br />	.footer-sidebar .widget blockquote,<br />	.primary-sidebar .widget blockquote {<br />		font-size: 14px;<br />		line-height: 1.2857142857;<br />	}<br /><br />	.footer-sidebar .widget blockquote cite,<br />	.primary-sidebar .widget blockquote cite {<br />		font-size: 12px;<br />		line-height: 1.5;<br />	}<br /><br />	.footer-sidebar .widget input,<br />	.footer-sidebar .widget textarea,<br />	.primary-sidebar .widget input,<br />	.primary-sidebar .widget textarea {<br />		font-size: 12px;<br />		padding: 3px 2px 4px 4px;<br />	}<br /><br />	.footer-sidebar .widget input[type=&quot;button&quot;],<br />	.footer-sidebar .widget input[type=&quot;reset&quot;],<br />	.footer-sidebar .widget input[type=&quot;submit&quot;],<br />	.primary-sidebar .widget input[type=&quot;button&quot;],<br />	.primary-sidebar .widget input[type=&quot;reset&quot;],<br />	.primary-sidebar .widget input[type=&quot;submit&quot;] {<br />		padding: 5px 15px 4px;<br />	}<br /><br />	.footer-sidebar .widget .widget-title,<br />	.primary-sidebar .widget .widget-title {<br />		font-size: 11px;<br />		font-weight: 900;<br />		line-height: 1.6363636363;<br />		margin-bottom: 18px;<br />	}<br /><br />	.footer-sidebar .widget_twentyfourteen_ephemera .entry-title,<br />	.footer-sidebar .widget_twentyfourteen_ephemera .entry-meta,<br />	.footer-sidebar .widget_twentyfourteen_ephemera .wp-caption-text,<br />	.footer-sidebar .widget_twentyfourteen_ephemera .post-format-archive-link,<br />	.footer-sidebar .widget_twentyfourteen_ephemera .entry-content table,<br />	.primary-sidebar .widget_twentyfourteen_ephemera .entry-title,<br />	.primary-sidebar .widget_twentyfourteen_ephemera .entry-meta,<br />	.primary-sidebar .widget_twentyfourteen_ephemera .wp-caption-text,<br />	.primary-sidebar .widget_twentyfourteen_ephemera .post-format-archive-link,<br />	.primary-sidebar .widget_twentyfourteen_ephemera .entry-content table {<br />		font-size: 11px;<br />		line-height: 1.6363636363;<br />	}<br /><br />	.footer-sidebar .widget_archive li,<br />	.footer-sidebar .widget_categories li,<br />	.footer-sidebar .widget_links li,<br />	.footer-sidebar .widget_meta li,<br />	.footer-sidebar .widget_nav_menu li,<br />	.footer-sidebar .widget_pages li,<br />	.footer-sidebar .widget_recent_comments li,<br />	.footer-sidebar .widget_recent_entries li,<br />	.primary-sidebar .widget_archive li,<br />	.primary-sidebar .widget_categories li,<br />	.primary-sidebar .widget_links li,<br />	.primary-sidebar .widget_meta li,<br />	.primary-sidebar .widget_nav_menu li,<br />	.primary-sidebar .widget_pages li,<br />	.primary-sidebar .widget_recent_comments li,<br />	.primary-sidebar .widget_recent_entries li {<br />		border-top: 0;<br />		padding: 0 0 6px;<br />	}<br /><br />	.footer-sidebar .widget_archive li:last-child,<br />	.footer-sidebar .widget_categories li:last-child,<br />	.footer-sidebar .widget_links li:last-child,<br />	.footer-sidebar .widget_meta li:last-child,<br />	.footer-sidebar .widget_nav_menu li:last-child,<br />	.footer-sidebar .widget_pages li:last-child,<br />	.footer-sidebar .widget_recent_comments li:last-child,<br />	.footer-sidebar .widget_recent_entries li:last-child,<br />	.primary-sidebar .widget_archive li:last-child,<br />	.primary-sidebar .widget_categories li:last-child,<br />	.primary-sidebar .widget_links li:last-child,<br />	.primary-sidebar .widget_meta li:last-child,<br />	.primary-sidebar .widget_nav_menu li:last-child,<br />	.primary-sidebar .widget_pages li:last-child,<br />	.primary-sidebar .widget_recent_comments li:last-child,<br />	.primary-sidebar .widget_recent_entries li:last-child {<br />		padding: 0;<br />	}<br /><br />	.footer-sidebar .widget_categories li ul,<br />	.footer-sidebar .widget_nav_menu li ul,<br />	.footer-sidebar .widget_pages li ul,<br />	.primary-sidebar .widget_categories li ul,<br />	.primary-sidebar .widget_nav_menu li ul,<br />	.primary-sidebar .widget_pages li ul {<br />		border-top: 0;<br />		margin-top: 6px;<br />	}<br /><br />	#supplementary {<br />		padding: 0;<br />	}<br /><br />	.footer-sidebar {<br />		font-size: 12px;<br />		line-height: 1.5;<br />	}<br /><br />	.featured-content {<br />		padding-left: 182px;<br />	}<br /><br />	.grid .featured-content .hentry {<br />		width: 33.3333333%;<br />	}<br /><br />	.grid .featured-content .hentry:nth-child( 2n+1 ) {<br />		clear: none;<br />	}<br /><br />	.grid .featured-content .hentry:nth-child( 3n+1 ) {<br />		clear: both;<br />	}<br /><br />	.grid .featured-content .entry-header {<br />		height: 120px;<br />	}<br />}<br /><br />@media screen and (min-width: 1040px) {<br />	.site-content .has-post-thumbnail .entry-header {<br />		margin-top: -48px;<br />	}<br /><br />	.archive-header,<br />	.comments-area,<br />	.image-navigation,<br />	.page-header,<br />	.page-content,<br />	.post-navigation,<br />	.site-content .entry-header,<br />	.site-content .entry-content,<br />	.site-content .entry-summary,<br />	.site-content footer.entry-meta {<br />		padding-right: 15px;<br />		padding-left: 15px;<br />	}<br /><br />	.full-width .archive-header,<br />	.full-width .comments-area,<br />	.full-width .image-navigation,<br />	.full-width .page-header,<br />	.full-width .page-content,<br />	.full-width .post-navigation,<br />	.full-width .site-content .entry-header,<br />	.full-width .site-content .entry-content,<br />	.full-width .site-content .entry-summary,<br />	.full-width .site-content footer.entry-meta {<br />		padding-right: 30px;<br />		padding-left: 30px;<br />	}<br />}<br /><br />@media screen and (min-width: 1080px) {<br />	.search-box .search-field {<br />		width: 324px;<br />	}<br /><br />	.site-content,<br />	.site-main .widecolumn {<br />		margin-left: 222px;<br />	}<br /><br />	.site:before {<br />		width: 222px;<br />	}<br /><br />	.search-box-wrapper,<br />	.featured-content {<br />		padding-left: 222px;<br />	}<br /><br />	#secondary {<br />		width: 162px;<br />	}<br /><br />	.secondary-navigation,<br />	.secondary-navigation ul ul {<br />		width: 222px;<br />	}<br /><br />	.secondary-navigation ul li:hover &gt; ul,<br />	.secondary-navigation ul li.focus &gt; ul {<br />		left: 202px;<br />	}<br /><br />	.slider .featured-content .entry-title {<br />		font-size: 33px;<br />	}<br /><br />	.slider .featured-content .entry-header,<br />	.slider-control-paging {<br />		width: 534px;<br />	}<br /><br />	.slider-control-paging {<br />		padding-left: 24px;<br />	}<br /><br />	.slider-control-paging li {<br />		margin: 12px 12px 12px 0;<br />	}<br /><br />	.slider-control-paging a {<br />		height: 24px;<br />		width: 24px;<br />	}<br /><br />	.slider-control-paging a:before {<br />		top: 6px;<br />		left: 6px;<br />	}<br />}<br /><br />@media screen and (min-width: 1110px) {<br />	.archive-header,<br />	.comments-area,<br />	.image-navigation,<br />	.page-header,<br />	.page-content,<br />	.post-navigation,<br />	.site-content .entry-header,<br />	.site-content .entry-content,<br />	.site-content .entry-summary,<br />	.site-content footer.entry-meta {<br />		padding-right: 30px;<br />		padding-left: 30px;<br />	}<br />}<br /><br />@media screen and (min-width: 1218px) {<br />	.archive-header,<br />	.comments-area,<br />	.image-navigation,<br />	.page-header,<br />	.page-content,<br />	.post-navigation,<br />	.site-content .entry-header,<br />	.site-content .entry-content,<br />	.site-content .entry-summary,<br />	.site-content footer.entry-meta {<br />		margin-right: 54px;<br />	}<br /><br />	.full-width .archive-header,<br />	.full-width .comments-area,<br />	.full-width .image-navigation,<br />	.full-width .page-header,<br />	.full-width .page-content,<br />	.full-width .post-navigation,<br />	.full-width .site-content .entry-header,<br />	.full-width .site-content .entry-content,<br />	.full-width .site-content .entry-summary,<br />	.full-width .site-content footer.entry-meta {<br />		margin-right: auto;<br />	}<br />}<br /><br />@media screen and (min-width: 1260px) {<br />	.site-content blockquote.alignleft,<br />	.site-content blockquote.alignright {<br />		width: -webkit-calc(50% + 18px);<br />		width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calc(50% + 18px);<br />	}<br /><br />	.site-content blockquote.alignleft {<br />		margin-left: -18%;<br />	}<br /><br />	.site-content blockquote.alignright {<br />		margin-right: -18%;<br />	}<br />}<br /><br /><br />/**<br /> * 12.0 Print<br /> * -----------------------------------------------------------------------------<br /> */<br /><br />@media print {<br />	body {<br />		background: none !important; /* Brute force since user agents all print differently. */<br />		color: #2b2b2b;<br />		font-size: 12pt;<br />	}<br /><br />	.site,<br />	.site-header,<br />	.hentry,<br />	.site-content .entry-header,<br />	.site-content .entry-content,<br />	.site-content .entry-summary,<br />	.site-content .entry-meta,<br />	.page-content,<br />	.archive-header,<br />	.page-header,<br />	.contributor-info,<br />	.comments-area,<br />	.attachment .entry-attachment .attachment {<br />		max-width: 100%;<br />	}<br /><br />	#site-header img,<br />	.search-toggle,<br />	.site-navigation,<br />	.site-content nav,<br />	.edit-link,<br />	.page-links,<br />	.widget-area,<br />	.more-link,<br />	.post-format-archive-link,<br />	.comment-respond,<br />	.comment-list .reply,<br />	.comment-reply-login,<br />	#secondary,<br />	.site-footer,<br />	.slider-control-paging,<br />	.slider-direction-nav {<br />		display: none;<br />	}<br /><br />	.site-title a,<br />	.entry-meta,<br />	.entry-meta a,<br />	.featured-content .hentry,<br />	.featured-content a {<br />		color: #2b2b2b;<br />	}<br /><br />	.entry-content a,<br />	.entry-summary a,<br />	.page-content a,<br />	.comment-content a {<br />		text-decoration: none;<br />	}<br /><br />	.site-header,<br />	.post-thumbnail,<br />	a.post-thumbnail:hover,<br />	.site-content .entry-header,<br />	.site-footer,<br />	.featured-content,<br />	.featured-content .entry-header {<br />		background: transparent;<br />	}<br /><br />	.header-main {<br />		padding: 48px 10px;<br />	}<br /><br />	.site-title {<br />		float: none;<br />		font-size: 19pt;<br />	}<br /><br />	.content-area {<br />		padding-top: 0;<br />	}<br /><br />	.list-view .site-content .hentry {<br />		border-bottom: 1px solid rgba(0, 0, 0, 0.1);<br />		margin-bottom: 48px;<br />		padding-bottom: 24px;<br />	}<br /><br />	.post-thumbnail img {<br />		margin: 0 10px 24px;<br />	}<br /><br />	.site-content .has-post-thumbnail .entry-header {<br />		padding-top: 0;<br />	}<br /><br />	.site-content footer.entry-meta {<br />		margin: 24px auto;<br />	}<br /><br />	.entry-meta .tag-links a {<br />		color: #fff;<br />	}<br /><br />	.singular .site-content .hentry.has-post-thumbnail {<br />		margin-top: 0;<br />	}<br /><br />	.gallery-columns-1.gallery-size-medium,<br />	.gallery-columns-1.gallery-size-thumbnail,<br />	.gallery-columns-2.gallery-size-thumbnail,<br />	.gallery-columns-3.gallery-size-thumbnail {<br />		display: block;<br />	}<br /><br />	.archive-title,<br />	.page-title {<br />		margin: 0 10px 48px;<br />	}<br /><br />	.featured-content .hentry {<br />		margin-bottom: 48px;<br />	}<br /><br />	.featured-content .post-thumbnail,<br />	.slider .featured-content .post-thumbnail {<br />		padding-top: 0;<br />	}<br /><br />	.featured-content .post-thumbnail img {<br />		position: relative;<br />	}<br /><br />	.featured-content .entry-header {<br />		padding: 0 10px 24px;<br />	}<br /><br />	.featured-content .entry-meta {<br />		font-size: 9pt;<br />		margin-bottom: 11px;<br />	}<br /><br />	.featured-content .cat-links {<br />		font-weight: 900;<br />	}<br /><br />	.featured-content .entry-title {<br />		font-size: 25pt;<br />		line-height: 36px;<br />	}<br />}<br /></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-plugins']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Activate')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Deactivate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newcontent</td>
+	<td>&lt;?php<br />/**<br />Wait so is this isn't it!<br /> * @package Hello_Dolly<br /> * @version 1.6<br /> */<br />/*<br />Plugin Name: Hello Dolly<br />Plugin URI: http://wordpress.org/plugins/hello-dolly/<br />Description: This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from &lt;cite&gt;Hello, Dolly&lt;/cite&gt; in the upper right of your admin screen on every page.<br />Author: Matt Mullenweg<br />Version: 1.6<br />Author URI: http://ma.tt/<br />*/<br /><br />function hello_dolly_get_lyric() {<br />	/** These are the lyrics to Hello Dolly */<br />	$lyrics = &quot;Hello, Dolly<br />Well, hello, Dolly<br />It's so nice to have you back where you belong<br />You're lookin' swell, Dolly<br />I can tell, Dolly<br />You're still glowin', you're still crowin'<br />You're still goin' strong<br />We feel the room swayin'<br />While the band's playin'<br />One of your old favourite songs from way back when<br />So, take her wrap, fellas<br />Find her an empty lap, fellas<br />Dolly'll never go away again<br />Hello, Dolly<br />Well, hello, Dolly<br />It's so nice to have you back where you belong<br />You're lookin' swell, Dolly<br />I can tell, Dolly<br />You're still glowin', you're still crowin'<br />You're still goin' strong<br />We feel the room swayin'<br />While the band's playin'<br />One of your old favourite songs from way back when<br />Golly, gee, fellas<br />Find her a vacant knee, fellas<br />Dolly'll never go away<br />Dolly'll never go away<br />Dolly'll never go away again&quot;;<br /><br />	// Here we split it into lines<br />	$lyrics = explode( &quot;\n&quot;, $lyrics );<br /><br />	// And then randomly choose a line<br />	return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );<br />}<br /><br />// This just echoes the chosen line, we'll position it later<br />function hello_dolly() {<br />	$chosen = hello_dolly_get_lyric();<br />	echo &quot;&lt;p id='dolly'&gt;$chosen&lt;/p&gt;&quot;;<br />}<br /><br />// Now we set that function up to execute when the admin_notices action is called<br />add_action( 'admin_notices', 'hello_dolly' );<br /><br />// We need some CSS to position the paragraph<br />function dolly_css() {<br />	// This makes sure that the positioning is also good for right-to-left languages<br />	$x = is_rtl() ? 'left' : 'right';<br /><br />	echo &quot;<br />	&lt;style type='text/css'&gt;<br />	#dolly {<br />		float: $x;<br />		padding-$x: 15px;<br />		padding-top: 5px;		<br />		margin: 0;<br />		font-size: 11px;<br />	}<br />	&lt;/style&gt;<br />	&quot;;<br />}<br /><br />add_action( 'admin_head', 'dolly_css' );<br /><br />?&gt;<br /></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-users']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.page-title-action</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>newuser</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>none@none2.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=first_name</td>
+	<td>none</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>none</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>cnn.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=createusersub</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://localhost/wordpress/wp-admin/user-edit.php?user_id=2&amp;wp_http_referer=%2Fwordpress%2Fwp-admin%2Fusers.php%3Fupdate%3Dadd%26id%3D2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//fieldset[@id='color-picker']/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.color-option</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=rich_editing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=rich_editing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>this guy isn't very evil!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-tools']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-settings']/a/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='date_format'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='wpbody-content']/div[3]/form/table/tbody/tr[9]/td/fieldset/label[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Writing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Reading</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Writing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Reading</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='show_on_front'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=page_on_front</td>
+	<td>label=regexp:\Learn about CRS</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=show_on_front</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Discussion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(text(),'Media')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Permalinks</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CRS Test Site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Hello world!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=comment</td>
+	<td>This is a nice blog guys!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=s</td>
+	<td>CRSv3 RC1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.search-submit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
