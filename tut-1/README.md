@@ -45,7 +45,7 @@ Primary key fingerprint: 45F6 8D54 BBE2 3FB3 039B  46E5 9766 E084 FB0F 43D8
 Seeing ‘Good signature’ indicates to us that we have obtained a good copy of our PCRE source code and we are ready to continue onto compiling it.
 
 ```bash
-$> tar xvzf pcre-8.39.tar.gz
+$> tar -xvzf pcre-8.39.tar.gz
 $> cd pcre-8.39
 $> ./configure --prefix=/usr/local/pcre/
 ```
@@ -121,7 +121,7 @@ Assuming that we see ‘Good signature’ we are able to proceed to compiling and in
 After verification we can unpack the package.
 
 ```bash
-$> tar xvzf nginx-1.11.6.tar.gz
+$> tar -xvzf nginx-1.11.6.tar.gz
 ```
 
 We can now enter the directory and configure the compiler with our entries and with information about our system. :underline:`Note: if you are going to be installing ModSecurity 2.x you will need to compile the ModSecurity module (--add-module=/usr/src/modsecurity/nginx/modsecurity) see the next tutorial for more details.`
